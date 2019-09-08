@@ -1,0 +1,137 @@
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+
+  border:solid 1rpx transparent;
+  border-bottom-color: #d1d0d0;
+
+}
+
+.mock{
+  background-color:#fefefe;
+  opacity: 0.6;
+  position: absolute;
+  width:100%;
+  height: 100%;
+  z-index: 1;
+
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20rpx 20rpx 20rpx 0rpx;
+  width:580rpx;
+  position: relative;
+  z-index: 1000;
+}
+
+.name{
+  font-size: 28rpx;
+  color:#0c395d;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+}
+
+.content{
+  font-size: 28rpx;
+  margin-bottom: 15rpx;
+
+}
+.address{
+  font-size: 24rpx;
+  color:#0c395d;
+  margin-top: 10rpx;
+
+
+
+
+}
+
+.commentlogo1{
+  display: flex;
+  flex-direction: row-reverse;
+
+  align-content:flex-end;
+  margin-bottom: 10rpx;
+  width:inherit;
+}
+
+.dianzan{
+
+
+  padding: 15rpx;
+  border:solid 1rpx transparent;
+  border-bottom-color: #d1d0d0;
+
+
+
+
+}
+
+.comment{
+
+  padding: 15rpx 15rpx 0rpx 15rpx;
+
+
+
+
+
+}
+.blank{
+  height: 10rpx;
+}
+
+.total{
+  width:inherit;
+  background-color: #eeeeee;
+  border-radius: 5rpx;
+}
+
+.commentname{
+  font-size: 26rpx;
+  color:#0c395d;
+
+
+
+}
+
+.commentdetail{
+  font-size: 26rpx;
+
+
+
+
+}
+
+.avatarimg {
+  width:110rpx;
+  height: 110rpx;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  position: relative;
+  z-index: 1000;
+}
+
+.contentimg{
+  width:480rpx;
+  height: auto;
+
+}
+
+
+.commentlogo{
+  width:77rpx;
+  height: 39rpx;
+}
+
+
+.heart{
+  width:40rpx;
+  height: 40rpx;
+}

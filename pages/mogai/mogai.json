@@ -1,0 +1,9 @@
+{
+
+  "usingComponents": {
+    "zhujian":"../utils/zhujian/zhujian"
+  },
+  "navigationBarBackgroundColor": "#091423",
+  "navigationBarTitleText": "魔改剧情游戏"
+
+}

@@ -1,0 +1,13 @@
+.homeimg{
+  width:142rpx;
+  height: 62rpx;
+}
+
+.home{
+  width:142rpx;
+  height: 62rpx;
+  position: fixed;
+  bottom: 100rpx;
+  right:0rpx;
+  z-index: 2000;
+}

@@ -1,0 +1,50 @@
+{
+  "pages": [
+
+    "pages/newindex/newindex",
+    "pages/lover/lover",
+    "pages/name/name",
+    "pages/index/index",
+    "pages/lianhuawu/lianhuawu",
+    "pages/mogai/mogai",
+    "pages/xuexi/xuexi"
+
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#091423",
+    "navigationBarTitleText": "魔道测试",
+    "navigationBarTextStyle": "white",
+    "backgroundColorTop": "#091423",
+    "backgroundColorBottom": "#091423",
+    "backgroundColor": "#091423"
+  },
+  "tabBar": {
+
+    "color": "#ffffff",
+    "borderStyle": "black",
+    "selectedColor": "#f97f88",
+
+
+    "backgroundColor": "#091423",
+
+    "list": [{
+        "pagePath": "pages/newindex/newindex",
+        "text": "首页",
+        "selectedIconPath": "utils/indexred.png",
+
+        "iconPath": "utils/index.png"
+
+      },
+      {
+        "pagePath": "pages/mogai/mogai",
+        "text": "魔改",
+        "selectedIconPath": "utils/mogaired.png",
+        "iconPath": "utils/mogai.png"
+      }
+    ]
+  }
+
+
+}

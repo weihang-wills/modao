@@ -1,0 +1,12 @@
+{
+  "usingComponents": {},
+
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#091423",
+    "navigationBarTitleText": "道友之家",
+    "navigationBarTextStyle":"white",
+    "backgroundColorTop":"#091423",
+    "backgroundColorBottom":"#091423",
+    "backgroundColor":"#091423"
+
+}

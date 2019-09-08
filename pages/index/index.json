@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+      "home":"../utils/home/home"
+  },
+  "backgroundTextStyle":"dark",
+  "navigationBarBackgroundColor": "#091423",
+  "navigationBarTitleText": "魔道爆笑测试",
+  "navigationBarTextStyle":"white",
+  "backgroundColorTop":"#091423",
+  "backgroundColorBottom":"#091423",
+  "backgroundColor":"#091423"
+}

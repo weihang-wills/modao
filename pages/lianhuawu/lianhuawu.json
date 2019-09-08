@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "card": "../utils/card/card",
+    "home": "../utils/home/home"
+
+
+  },
+  "navigationBarBackgroundColor": "#691486",
+  "navigationBarTitleText": "莲花坞"
+}

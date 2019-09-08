@@ -1,0 +1,95 @@
+{
+	"projectid": "1109671373_modao",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": true,
+		"remoteDebugLogEnable": false,
+		"useAlphaLib": true,
+		"nodeModules": true,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"createTime": 1565497810380,
+	"accessTime": 1565497810381,
+	"packOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"qqappid": "1109671373",
+	"projectname": "modao",
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "1",
+					"pathName": "pages/index/index",
+					"query": "this.data.current=6",
+					"scene": ""
+				},
+				{
+					"id": 1,
+					"name": "111",
+					"pathName": "pages/name/name",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "222",
+					"pathName": "pages/lianhuawu/lianhuawu",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "lover",
+					"pathName": "pages/lover/lover",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "mogai",
+					"pathName": "pages/mogai/mogai",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "xuexi",
+					"pathName": "pages/xuexi/xuexi",
+					"query": "",
+					"scene": ""
+				}
+			]
+		}
+	}
+}

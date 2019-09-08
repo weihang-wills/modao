@@ -1,0 +1,104 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+swiper{
+  width:100%;
+  height: 400rpx;
+
+}
+
+.title{
+
+  margin-bottom: 40rpx;
+  font-size: 40rpx;
+}
+
+.hint{
+  font-size: 32rpx;
+
+}
+.choose{
+  font-size: 36rpx;
+  color:#6a005f;
+}
+
+.picker{
+  width:40%;
+  border:solid 4rpx transparent;
+  border-bottom-color: #6a005f;
+  padding:20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40rpx;
+
+}
+.swiperitem{
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400rpx;
+  font-family: 'HappyZcool-2016';
+}
+
+.icon{
+  width:120rpx;
+  height: 120rpx;
+  background: none;
+}
+
+.iconbutton{
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  margin-bottom: 20rpx;
+
+  width:120rpx;
+  height: 120rpx;
+  padding: 0;
+  background: none;
+
+}
+
+
+
+.topic{
+  font-family: 'HappyZcool-2016';
+  font-size: 60rpx;
+  margin: 200rpx 40rpx;
+  color:#390b25;
+  text-align: center;
+  height: 180rpx;
+}
+
+.test{
+  font-family: 'HappyZcool-2016';
+}
+
+page{
+  background-color: #091423;
+
+
+
+
+}

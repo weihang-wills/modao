@@ -1,0 +1,52 @@
+
+
+page{
+
+
+  background-color: #192f53;
+
+
+}
+.ad{
+
+  background-color: white;
+  margin: 20rpx 40rpx 20rpx 40rpx;
+  padding: 0rpx;
+
+}
+
+
+
+.testcard{
+  width:632rpx;
+  height: 217rpx;
+  margin:15rpx 0rpx;
+}
+
+.placecard{
+  width:300rpx;
+  height: 256rpx;
+  margin:15rpx 15rpx;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+
+
+}
+
+.button1{
+  margin-top:20rpx;
+  padding: 0;
+  background: none;
+  color:white;
+  font-family: 'Fangzhengke';
+  font-size:36rpx;
+}
+
+.button1::after{
+  border: none;
+}

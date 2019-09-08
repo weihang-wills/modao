@@ -1,0 +1,25 @@
+
+
+.zhujian{
+  width:597rpx;
+  height: 230rpx;
+}
+
+.word{
+  font-size: 46rpx;
+  font-family: "Fangzhengke";
+  position: absolute;
+  left: 160rpx;
+
+  z-index: 1000;
+
+}
+.all{
+  position: relative;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}

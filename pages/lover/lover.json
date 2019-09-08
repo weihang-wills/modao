@@ -1,0 +1,9 @@
+{
+
+  "usingComponents": {
+    "home":"../utils/home/home"
+  },
+  "navigationBarBackgroundColor": "#091423",
+  "navigationBarTitleText": "你的另一半"
+
+}

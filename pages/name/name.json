@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "home":"../utils/home/home"
+  },
+
+  "backgroundTextStyle":"dark",
+  "navigationBarBackgroundColor": "#091423",
+  "navigationBarTitleText": "魔道姓名测试",
+  "navigationBarTextStyle":"white",
+  "backgroundColorTop":"#091423",
+  "backgroundColorBottom":"#091423",
+  "backgroundColor":"#091423"
+}
