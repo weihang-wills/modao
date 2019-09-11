@@ -31,5 +31,7 @@
 <view class='button1' style='margin-left:40rpx'>下面是广告区，爱点不点，点了最好</view>
 <view class='ad'>
 <ad  unit-id="1c669e4ebba994d5eea5188f6cceb15e" type="feeds"></ad>
+<ad unit-id="eeeff4602aa805cb904a064ec3b2074d"></ad>
 </view>
+
 </view>

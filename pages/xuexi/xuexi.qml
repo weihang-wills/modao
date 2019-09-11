@@ -23,7 +23,7 @@ bindtap='navigator'>{{item.title}}</select>
   <view wx:else>
   <select bindtap='go'>{{main.selects.title}}</select>
   </view>
-
+    <ad style='position:absolute;bottom:0rpx;'unit-id="1dc18260e632cd725eee152b57205601"></ad>
 
 </view>
 

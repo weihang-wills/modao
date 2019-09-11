@@ -10,7 +10,7 @@ page{
 .ad{
 
   background-color: white;
-  margin: 20rpx 40rpx 20rpx 40rpx;
+  margin: 0rpx 40rpx 40rpx 40rpx;
   padding: 0rpx;
 
 }

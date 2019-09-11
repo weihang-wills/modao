@@ -6,10 +6,10 @@
 }
 
 .word{
-  font-size: 46rpx;
+  font-size: 40rpx;
   font-family: "Fangzhengke";
   position: absolute;
-  left: 160rpx;
+  left: 80rpx;
 
   z-index: 1000;
 
