@@ -1,3 +1,5 @@
+const app=getApp()
+
 Page({
 
   data: {
@@ -78,6 +80,24 @@ Page({
     })
 
 
+      wx.setStorage({
+        key:'pass1',
+        data:{
+          pass:false,
+          num:i
+        },
+        success(){
+          console.log('儲存false成功');
+        }
+      })
+
+
+
+
+
+
+
+
   },
 
   end() {
@@ -87,23 +107,8 @@ Page({
   },
 
   go() {
-    wx.showModal({
-      title: '剧情开发中…',
-      content: '敬请等待下一章剧情',
-      showCancel: false,
-      confirmColor: '#002e73',
-
-      success(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-          wx.navigateBack({
-            delta:1
-          })
-        }
-
-
-
-      }
+    wx.redirectTo({
+      url:'/pages/qiongqi/xuexi'
     })
 
 
@@ -120,6 +125,59 @@ Page({
 
     }
   },
+
+  onLoad(){
+    const pass1 = wx.getStorageSync('pass1')
+    const pass2 = wx.getStorageSync('pass2')
+
+    app.globalData.pass1=pass1
+    app.globalData.pass2=pass2
+    console.log(pass1.pass);
+
+  if(app.globalData.pass1.pass==false){
+
+    var i = app.globalData.pass1.num
+    var selection = this.data.selections[i]
+    var over = selection.over
+    var selects = {
+      title: selection.buttonword,
+      over: over,
+    }
+
+    this.setData({
+      background: selection.background,
+      selected: false,
+      'main.title': selection.title,
+      'main.hint': over ? "Game Over" : "选择正确！",
+      'main.selects': selects,
+
+
+
+
+
+
+    })
+
+  }
+
+},
+
+restart(){
+
+
+
+  wx.setStorage({
+    key:'pass1',
+    data:{
+      pass:true,
+
+    },
+    success(){
+      console.log('储存true成功');
+    }
+  })
+
+}
 
 
 

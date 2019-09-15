@@ -13,7 +13,7 @@ bindtap='navigator'>{{item.title}}</select>
 </view>
 
 <view wx:else>
-<view style='margin-top:200rpx;'/>
+<view style='margin-top:220rpx;'/>
   <view class='texts'>{{main.title}}</view>
   <view class='hint'>{{main.hint}}</view>
 
@@ -26,7 +26,6 @@ bindtap='navigator'>{{item.title}}</select>
   <button class='select' open-type='share' >
   <select bindtap='restart' style='margin:0rpx;padding:0rpx'>分享重来</select>
   </button>
-
   <ad style='position:relative;margin-top:40rpx;' unit-id="1dc18260e632cd725eee152b57205601"></ad>
 
 </view>

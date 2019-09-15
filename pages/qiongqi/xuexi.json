@@ -1,0 +1,9 @@
+{
+
+  "usingComponents": {
+    "select":"../utils/select/select"
+  },
+  "navigationBarBackgroundColor": "#091423",
+  "navigationBarTitleText": "穷奇道截杀"
+
+}

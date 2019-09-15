@@ -58,6 +58,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    pass1: true,
+    pass2: true,
   }
 })

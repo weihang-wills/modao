@@ -10,7 +10,9 @@ zhang='{{item}}'/> -->
 <zhujian zhang='{{zhangs[0]}}' />
 </navigator>
 
-<zhujian zhang='{{zhangs[1]}}' style='color:grey;'/>
+
+<zhujian bindtap='nav' data-index='1' zhang='{{zhangs[1]}}' />
+
 
 </view>
 </view>

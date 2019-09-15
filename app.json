@@ -7,7 +7,9 @@
     "pages/index/index",
     "pages/lianhuawu/lianhuawu",
     "pages/mogai/mogai",
-    "pages/xuexi/xuexi"
+    "pages/xuexi/xuexi",
+    "pages/qiongqi/xuexi",
+    "pages/shuoming/shuoming"
 
 
   ],
@@ -42,6 +44,12 @@
         "text": "魔改",
         "selectedIconPath": "utils/mogaired.png",
         "iconPath": "utils/mogai.png"
+      },
+      {
+        "pagePath": "pages/shuoming/shuoming",
+        "text": "我们",
+        "selectedIconPath": "utils/niedaored.png",
+        "iconPath": "utils/niedao.png"
       }
     ]
   }

@@ -6,6 +6,18 @@ page{
 
 
 }
+
+.select{
+  width:100%;
+  height:100%;
+  padding: 0rpx;
+  background: none;
+  margin-bottom:40rpx;
+
+
+
+
+}
 .texts{
 
   font-family: 'Fangzhengke';
@@ -20,28 +32,8 @@ page{
   text-align: center;
 
 
-
 }
-
-.select{
-  width:100%;
-  height:100%;
-  padding: 0rpx;
-  background: none;
-  margin-bottom:40rpx;
-
-
-
-
-}
-.select::after{
-  border: none;
-
-
-}
-
 .container2 {
-
   position: relative;
   height: 100%;
   width:100%;

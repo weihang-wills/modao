@@ -212,6 +212,80 @@ Page({
           ],
 
           [{
+              avatarimg: 'http://pwh.img.jogiter.cn/modao/weiwuxian.png',
+              name: '魏无羡',
+              content: '哈哈哈，小蓝湛真可爱(*╹▽╹*)害羞',
+              contentimg: 'http://pwh.img.jogiter.cn/modao/child.jpg',
+              address: '姑苏·云深不知处',
+              commentlogo: '../../utils/card/src/commentlogo.png',
+              heart: '../../utils/card/src/heart.png',
+              commentname: '蓝忘机，江澄，金凌，蓝思追，蓝景仪，欧阳子真，江厌离，金子轩，温宁，温情，蓝曦臣，薛洋，虞夫人，藏色散人',
+              comment: [{
+                  commentname: '江澄',
+                  commentdetail: '你生的',
+
+                },
+                {
+                  commentname: '魏无羡回复江澄',
+                  commentdetail: '咳咳……江澄你说什么呢',
+
+                },
+                {
+                  commentname: '江澄',
+                  commentdetail: '那难不成是蓝忘机生的？',
+
+                },
+                {
+                  commentname: '魏无羡回复江澄',
+                  commentdetail: '江澄泥垢了！……这是我自己的小法术',
+                },
+                {
+                  commentname: '蓝思追',
+                  commentdetail: '……魏前辈，可以送一个给我么(✧◡✧)',
+                },
+                {
+                  commentname: '魏无羡回复蓝思追',
+                  commentdetail: '一坛天子笑一个o(*￣︶￣*)o',
+                },
+                {
+                  commentname: '蓝景仪',
+                  commentdetail: '魏前辈我也要！',
+                },
+                {
+                  commentname: '蓝忘机',
+                  commentdetail: '再买的，雅正集倒立十遍！',
+                },
+                {
+                  commentname: '金凌',
+                  commentdetail: '哈哈哈，公然贩卖含光君周边',
+                },
+
+              ]
+            },
+            {
+              avatarimg: 'http://pwh.img.jogiter.cn/modao/weiwuxian.png',
+              name: '魏无羡',
+              content: '我现在深刻体会到我当初言论的正确，灵气也是气，怨气也是气，怨气怎的就不能为人所用呢？',
+              contentimg: 'http://pwh.img.jogiter.cn/modao/chuidi.jpg',
+              address: '姑苏·彩衣镇',
+              commentlogo: '../../utils/card/src/commentlogo.png',
+              heart: '../../utils/card/src/heart.png',
+              commentname: '蓝忘机，欧阳子真，蓝启仁',
+              comment: [{
+                  commentname: '江澄',
+                  commentdetail: '汽车也是车，灵车也是车，灵车怎么就不能为人所开呢？',
+
+                },
+                {
+                  commentname: '魏无羡回复江澄',
+                  commentdetail: '咋地，你用灵车漂移啊',
+
+                },
+
+
+              ]
+            },
+            {
               avatarimg: 'http://pwh.img.jogiter.cn/modao/jingyi.png',
               name: '蓝景仪',
               content: '魏前辈，静室有网么？先生把兰室的网掐了…@魏无羡',

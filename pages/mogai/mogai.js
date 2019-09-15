@@ -1,7 +1,8 @@
-
+const app=getApp()
 
 Page({
 data:{
+
   background:'http://pwh.img.jogiter.cn/modao/mogaiback.png',
   zhangs:[
     {
@@ -10,7 +11,7 @@ data:{
     },
     {
       zhangjie:'第二章',
-      title:'敬请期待…'
+      title:'穷奇道截杀'
     }
   ]
 },
@@ -27,7 +28,30 @@ data:{
     }
   },
 
+  nav(e){
+
+    var i=e.target.dataset.index
+    var passed='pass'+i
+    const pass=wx.getStorageSync(passed)
+
+    if(pass.num==0){
+      wx.navigateTo({
+        url:'../../pages/qiongqi/xuexi'
+      })
+    }
+    else{
+      wx.showToast({
+        title: '请先通过上一章节',
+        icon: 'none',
+
+      })
+    }
+
+  },
+
   onLoad(){
+
+
 
     // //
     //     var that = this
