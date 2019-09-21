@@ -9,10 +9,36 @@
 <navigator url="/pages/lianhuawu/lianhuawu?back=gusu" hover-class="navigator-hover">
       <image class='placecard' src='../newindex/src/yun.png' />
     </navigator>
+    <view bindtap='notopen'>
+          <image class='placecard' style='margin-right:20rpx;' src='../newindex/src/yicheng.png' />
+        </view>
   </view>
   <navigator url="/pages/index/index" hover-class="navigator-hover">
     <image class='testcard' src='../newindex/src/baoxiao.png' />
   </navigator>
+
+
+
+  <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toquiz'>
+    <image class='testcard1' src='../newindex/src/quiz.png' />
+    <view class="incard">
+
+      <view class='littlerow'>
+
+      <image style='width:50rpx;height:50rpx;border-radius:50%' src='{{userInfo.avatarUrl}}'/>
+        <text style='margin-left:20rpx;max-width:200rpx;overflow:hidden;color:white;'>{{userInfo.nickName}}</text>
+        <text style='margin-left:10rpx;color:#ffcd76;'>{{pass}}</text>
+      </view>
+
+
+
+
+    </view>
+
+  </button>
+
+
+
 
   <navigator url="/pages/name/name" hover-class="navigator-hover">
     <image class='testcard' src='../newindex/src/name.png' />
@@ -21,6 +47,8 @@
   <navigator url="/pages/lover/lover" hover-class="navigator-hover">
     <image class='testcard' src='../newindex/src/lover.png' />
   </navigator>
+
+
 
 
 

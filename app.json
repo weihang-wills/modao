@@ -9,7 +9,8 @@
     "pages/mogai/mogai",
     "pages/xuexi/xuexi",
     "pages/qiongqi/xuexi",
-    "pages/shuoming/shuoming"
+    "pages/shuoming/shuoming",
+    "pages/quiz/quiz"
 
 
   ],

@@ -1,52 +1,77 @@
-
-
-page{
-
-
+page {
   background-color: #192f53;
-
-
 }
-.ad{
 
+.ad {
   background-color: white;
   margin: 0rpx 40rpx 40rpx 40rpx;
   padding: 0rpx;
-
 }
 
-
-
-.testcard{
-  width:632rpx;
+.quiz {
+  position: relative;
+  width: 632rpx;
   height: 217rpx;
-  margin:15rpx 0rpx;
+  margin: 0rpx 0rpx 20rpx 0rpx;
+  padding: 0;
 }
 
-.placecard{
-  width:300rpx;
+.testcard1 {
+
+  width: 632rpx;
+  height: 217rpx;
+}
+
+.incard{
+  position: absolute;
+  z-index: 1000;
+  top:100rpx;
+  margin-left: 37rpx;
+  text-align: left;
+
+
+}
+
+.testcard {
+  width: 632rpx;
+  height: 217rpx;
+  margin: 15rpx 0rpx 15rpx 0rpx;
+}
+
+.placecard {
+  width: 300rpx;
   height: 256rpx;
-  margin:15rpx 15rpx;
+  margin: 15rpx 0rpx 15rpx 20rpx;
 }
 
-.row{
+.littlerow{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items:center;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 32rpx;
 
 
 }
 
-.button1{
-  margin-top:20rpx;
+.row {
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+}
+
+.button1 {
+  margin-top: 20rpx;
   padding: 0;
   background: none;
-  color:white;
+  color: white;
   font-family: 'Fangzhengke';
-  font-size:36rpx;
+  font-size: 36rpx;
 }
 
-.button1::after{
+.button1::after {
   border: none;
 }

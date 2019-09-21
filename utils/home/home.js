@@ -18,8 +18,8 @@ Component({
   methods: {
     // 这里是一个自定义方法
     gotohome() {
-      wx.redirectTo({
-        url:'../newindex/newindex'
+      wx.switchTab({
+        url:'../../pages/newindex/newindex'
       })
 
     }

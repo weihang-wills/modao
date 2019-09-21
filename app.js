@@ -2,31 +2,10 @@
 App({
   onLaunch: function() {
     // 展示本地存储能力
-    var logs = qq.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    qq.setStorageSync('logs', logs)
+    // var logs = qq.getStorageSync('logs') || []
+    // logs.unshift(Date.now())
+    // qq.setStorageSync('logs', logs)
 
-    // wx.loadFontFace({
-    //   family: 'HappyZcool-2016',
-    //   source: 'url("http://pwh.img.jogiter.cn/zhanku.ttf")',
-    //   success: res => {
-    //     console.log('font load success', res)
-    //   },
-    //   fail: err => {
-    //     console.log('font load fail', err)
-    //   }
-    // })
-    //
-    // wx.loadFontFace({
-    //   family: 'Fangzhengke',
-    //   source: 'url("http://pwh.img.jogiter.cn/FZKeSHBTJW.TTF")',
-    //   success: res => {
-    //     console.log('font load success', res)
-    //   },
-    //   fail: err => {
-    //     console.log('font load fail', err)
-    //   }
-    // })
 
 
 
@@ -60,5 +39,8 @@ App({
   globalData: {
     pass1: true,
     pass2: true,
+    userInfo:{},
+
+
   }
 })
