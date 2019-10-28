@@ -2,14 +2,15 @@
 
 .zhujian{
   width:597rpx;
-  height: 230rpx;
+  height: 172rpx;
 }
 
 .word{
-  font-size: 40rpx;
+  font-size: 36rpx;
   font-family: "Fangzhengke";
   position: absolute;
   left: 80rpx;
+  color: #6a3906;
 
   z-index: 1000;
 

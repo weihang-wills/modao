@@ -2,7 +2,8 @@ const app = getApp()
 
 Page({
   data: {
-    pass:'未通过',
+    pass: '未通过',
+    pass1:'未通过',
     logs: [],
     background: 'http://pwh.img.jogiter.cn/backgroundindex.png',
     userInfo: '',
@@ -11,13 +12,19 @@ Page({
   },
 
   onLoad: function() {
-    if(this.data.logs){
-      console.log(`我的结果是：${this.data.pass}`);
-    }
+
+
     var pass = wx.getStorageSync('pass')
-    if(pass){
+    if (pass) {
       this.setData({
-        pass:'已通过'
+        pass: '已通过'
+      })
+    }
+
+    var pass1 = wx.getStorageSync('pass1')
+    if (pass1) {
+      this.setData({
+        pass1: '已通过'
       })
     }
 
@@ -52,6 +59,92 @@ Page({
       })
     }
 
+    // qq.getSetting({
+    //   success: res => {
+    //     if (!res.authSetting['scope.userLocation']) {
+    //       wx.authorize({
+    //         scope: 'scope.userLocation',
+    //         success() {
+    //           wx.getLocation({
+    //             success(res) {
+    //               console.log(1);
+    //               wx.request({
+    //                 url: 'https://restapi.amap.com/v3/geocode/regeo',
+    //                 data: {
+    //                   location: `${res.longitude},${res.latitude}`,
+    //                   key: '1da69716fa4b7094ee6aeaedbe4837cc',
+    //
+    //                 },
+    //
+    //
+    //                 success(res) {
+    //                   console.log(res);
+    //                   wx.request({
+    //
+    //                     url: 'https://restapi.amap.com/v3/weather/weatherInfo',
+    //                     data: {
+    //
+    //                       key: '1da69716fa4b7094ee6aeaedbe4837cc',
+    //                       city:res.data.regeocode.addressComponent.adcode
+    //
+    //                     },
+    //                     success(res){
+    //                       console.log(res);
+    //
+    //                     }
+    //
+    //                   })
+    //                 }
+    //               })
+    //             }
+    //           })
+    //
+    //
+    //         }
+    //       })
+    //     }else{
+    //       wx.getLocation({
+    //         success(res) {
+    //           console.log(2);
+    //           console.log(`${res.longitude},${res.latitude}`);
+    //           wx.request({
+    //             url: 'https://restapi.amap.com/v3/geocode/regeo',
+    //             data: {
+    //               location: `${res.longitude},${res.latitude}`,
+    //               key: '1da69716fa4b7094ee6aeaedbe4837cc',
+    //
+    //             },
+    //
+    //
+    //             success(res) {
+    //               console.log(res);
+    //               wx.request({
+    //
+    //                 url: 'https://restapi.amap.com/v3/weather/weatherInfo',
+    //                 data: {
+    //
+    //                   key: '1da69716fa4b7094ee6aeaedbe4837cc',
+    //                   city:[320500,610300]
+    //
+    //                 },
+    //                 success(res){
+    //                   console.log(res);
+    //
+    //                 }
+    //
+    //               })
+    //             }
+    //           })
+    //         }
+    //       })
+    //
+    //     }
+    //   }
+    // })
+
+
+
+
 
 
 
@@ -59,6 +152,9 @@ Page({
 
   getUserInfo: function(e) {
     console.log(e)
+    qq.BaaS.auth.loginWithQQ(e,{syncUserProfile:'overwrite'}).then(
+      user=>{console.log(user);},err=>{}
+    )
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -99,7 +195,7 @@ Page({
 
   toquiz() {
 
-    if(this.data.userInfo){
+    if (this.data.userInfo) {
 
       console.log(this.data.userInfo);
 
@@ -138,18 +234,69 @@ Page({
 
   },
 
-  onShow(){
+
+  toquiz1() {
+
+    if (this.data.userInfo) {
+
+      console.log(this.data.userInfo);
+
+
+
+
+
+
+
+
+      console.log('进入quiz1');
+
+
+
+      var quiz1 = wx.getStorageSync('quiz1')
+      if (quiz1) {
+        wx.navigateTo({
+          url: '../../pages/quiz1/quiz?quiz=' + quiz1,
+
+        })
+      } else {
+
+        wx.navigateTo({
+          url: '../../pages/quiz1/quiz',
+
+        })
+
+      }
+
+    }
+
+
+
+
+
+
+  },
+
+  onShow() {
 
     var pass = wx.getStorageSync('pass')
-    if(pass){
+    if (pass) {
       this.setData({
-        pass:'已通过'
+        pass: '已通过'
+      })
+    }
+
+    var pass1 = wx.getStorageSync('pass1')
+    if (pass1) {
+      this.setData({
+        pass1: '已通过'
       })
     }
 
 
 
-  }
+  },
+
+
 
 
 

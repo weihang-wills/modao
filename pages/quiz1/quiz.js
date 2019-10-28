@@ -6,30 +6,30 @@ Page({
   data: {
     home:false,
     ad: false,
-    background: 'http://pwh.img.jogiter.cn/modao/shiji1.png',
+    background: 'http://pwh.img.jogiter.cn/modao/fujiatiback.png',
     userInfo: {},
     hasUserInfo: false,
     canIUse: qq.canIUse('button.open-type.getUserInfo'),
     current: 0,
     quiz: [{
-        title: '1.下面几人中，身高最高的是哪一位？',
+        title: '1.仙子是什么品种的狗狗？',
         choose: [{
-            name: '魏无羡',
+            name: '阿拉斯加',
             right: false,
             num: 0
           },
           {
-            name: '蓝曦臣',
-            right: false,
-            num: 0
-          },
-          {
-            name: '金光瑶',
+            name: '哈士奇',
             right: true,
             num: 0
           },
           {
-            name: '江澄',
+            name: '藏獒',
+            right: false,
+            num: 0
+          },
+          {
+            name: '黑棕犬',
             right: false,
             num: 0
           },
@@ -37,24 +37,24 @@ Page({
 
       },
       {
-        title: '2.夷陵老祖最怕什么东西？',
+        title: '2.蓝启仁的胡子曾经被谁刮了？',
         choose: [{
             name: '蓝忘机',
             right: false,
             num: 1
           },
           {
-            name: '狗',
+            name: '藏色散人',
             right: true,
             num: 1
           },
           {
-            name: '江厌离',
+            name: '蓝景仪',
             right: false,
             num: 1
           },
           {
-            name: '兔子',
+            name: '蓝曦臣',
             right: false,
             num: 1
           },
@@ -62,49 +62,49 @@ Page({
         ]
       },
       {
-        title: '3.可以被封为影帝的是下面哪一位？',
+        title: '3.江澄相过几次亲？',
         choose: [{
-            name: '阿菁',
+            name: '1',
             right: false,
             num: 2
           },
           {
-            name: '蓝曦臣',
+            name: '2',
             right: false,
             num: 2
           },
           {
-            name: '聂怀桑',
+            name: '3',
             right: true,
             num: 2
+          },
+          {
+            name: '4',
+            right: false,
+            num: 2
+          },
+        ]
+      },
+      {
+        title: '4.身高最矮的是？',
+        choose: [{
+            name: '蓝思追',
+            right: false,
+            num: 3
           },
           {
             name: '金光瑶',
             right: false,
-            num: 2
+            num: 3
           },
-        ]
-      },
-      {
-        title: '4.江澄最喜欢的是什么？',
-        choose: [{
-            name: '魏婴',
+          {
+            name: '欧阳子真',
             right: false,
             num: 3
           },
           {
-            name: '狗',
+            name: '蓝景仪',
             right: true,
-            num: 3
-          },
-          {
-            name: '金凌',
-            right: false,
-            num: 3
-          },
-          {
-            name: '聂怀桑',
-            right: false,
             num: 3
           },
 
@@ -113,24 +113,24 @@ Page({
         ]
       },
       {
-        title: '5.下面谁最能读懂蓝忘机的内心呢？',
+        title: '5.魏远道这个名字是谁帮魏无羡取的？',
         choose: [{
-            name: '蓝曦臣',
-            right: true,
+            name: '江澄',
+            right: false,
+            num: 4
+          },
+          {
+            name: '蓝忘机',
+            right: false,
             num: 4
           },
           {
             name: '魏无羡',
-            right: false,
+            right: true,
             num: 4
           },
           {
-            name: '聂怀桑',
-            right: false,
-            num: 4
-          },
-          {
-            name: '蓝思追',
+            name: '绵绵',
             right: false,
             num: 4
           },
@@ -142,57 +142,57 @@ Page({
     ],
 
     blank: [{
-        title: '6.义城有三盲，分别是真盲，假盲和？',
-        answer: '心盲',
+        title: '6."你一开口我就笑，我一笑，剑就不稳了"这是谁说的话？',
+        answer: '晓星尘',
         right: false,
 
 
       },
 
       {
-        title: '7.蓝忘机与魏无羡被粉丝称之为____夫妇',
-        answer: '忘羡',
+        title: '7.拂雪的是谁的剑？',
+        answer: '宋岚',
         right: false,
 
       },
       {
-        title: '8.魏无羡最喜欢喝的是？',
-        answer: '天子笑',
+        title: '8.魔道中谁的笑点最低？',
+        answer: '宋岚',
         right: false,
       },
       {
-        title: '9.魏无羡最喜欢的女性是？',
-        answer: '江厌离',
-        right: false,
-      },
-
-      {
-        title: '10.我见诸君多有病，_________。(8个字)',
-        answer: '料诸君见我应如是',
+        title: '9.江澄相亲中对女方的要求是要对______好？',
+        answer: '金凌',
         right: false,
       },
 
       {
-        title: '11.明月清风晓星尘，_________。',
-        answer: '傲雪凌霜宋子琛',
+        title: '10.蓝思追的身高是______cm',
+        answer: '172',
         right: false,
       },
 
       {
-        title: '12.夷陵见狗怂，_________。',
-        answer: '姑苏一杯倒',
+        title: '11.蓝曦臣的名为____。（一个字）',
+        answer: '涣',
         right: false,
       },
 
       {
-        title: '13.魔道中的恶霸三人组是温晁，金子勋和_____',
-        answer: '莫子渊',
+        title: '12.金光瑶的佩剑是____。',
+        answer: '恨生',
         right: false,
       },
 
       {
-        title: '14.全剧中，有几对CP是官配？请写阿拉伯数字 ',
-        answer: '1',
+        title: '13.蓝曦臣的萧名为_____',
+        answer: '裂冰',
+        right: false,
+      },
+
+      {
+        title: '14.“人不风流枉少年”是谁说的？ ',
+        answer: '江枫眠',
         right: false,
       },
 
@@ -230,7 +230,7 @@ console.log('ad不对');
 
         // 选错了
         wx.setStorage({
-          key: 'quiz',
+          key: 'quiz1',
           data: i,
           success() {
             console.log('第%s题错了', i);
@@ -305,8 +305,11 @@ console.log('ad不对');
 
         if(that.data.current==14){
           wx.setStorage({
-            key:'pass',
+            key:'pass1',
             data:true,
+            success(res){
+              console.log('pass1成功储存');
+            }
           })
         }
 
@@ -317,7 +320,7 @@ console.log('ad不对');
         // 选错了
 
         wx.setStorage({
-          key: 'quiz',
+          key: 'quiz1',
           data: i + 5,
           success() {
             console.log('第%s题错了', i + 5);
@@ -357,7 +360,7 @@ console.log('ad不对');
       ad: false,
     })
     console.log('点击了广告');
-    wx.removeStorageSync('quiz')
+    wx.removeStorageSync('quiz1')
   },
 
   onLoad(options) {
@@ -405,10 +408,10 @@ console.log('ad不对');
 
 
   },
+
   catchTouchMove:function(res){
    return false
  },
-
 
   getUserInfo: function(e) {
     console.log(e)
@@ -427,15 +430,15 @@ console.log('ad不对');
       // 来自页面内转发按钮
       console.log('button');
       return {
-        title: this.data.userInfo.nickName+'通过了魔道十级考试，你也来试试吧',
-        path: '/pages/quiz/quiz?home=1'
+        title: this.data.userInfo.nickName+'通过了魔道附加题考试，你也来试试吧',
+        path: '/pages/quiz1/quiz?home=1'
 
       }
     }
     else{
       return {
-        title: '魔道真爱粉十级考试等你来闯关',
-        path: '/pages/quiz/quiz?home=1'
+        title: '魔道真爱粉附加题考试等你来闯关',
+        path: '/pages/quiz1/quiz?home=1'
 
       }
 

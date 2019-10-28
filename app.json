@@ -10,10 +10,19 @@
     "pages/xuexi/xuexi",
     "pages/qiongqi/xuexi",
     "pages/shuoming/shuoming",
-    "pages/quiz/quiz"
-
+    "pages/quiz/quiz",
+    "pages/zhanqian/xuexi",
+    "pages/buyetian/xuexi",
+    "pages/pet/pet",
+    "pages/quiz1/quiz",
+    "pages/jianwen/jianwen"
 
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序的天气显示"
+    }
+  },
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#091423",
@@ -45,6 +54,12 @@
         "text": "魔改",
         "selectedIconPath": "utils/mogaired.png",
         "iconPath": "utils/mogai.png"
+      },
+      {
+        "pagePath": "pages/pet/pet",
+        "text": "忘羡",
+        "selectedIconPath": "utils/wangxianred.png",
+        "iconPath": "utils/wangxian.png"
       },
       {
         "pagePath": "pages/shuoming/shuoming",

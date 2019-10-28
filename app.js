@@ -6,18 +6,30 @@ App({
     // logs.unshift(Date.now())
     // qq.setStorageSync('logs', logs)
 
+    require('./utils/sdk-qq.2.8.1.js')
+    qq.BaaS.init('834fd1b096ec1c4d1730', {
+      autoLogin: false,
+    })
+
 
 
 
     // 登录
-    qq.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+    // qq.BaaS.auth.loginWithQQ().then(user=>{console.log(user);},
+    //   err=>{console.log(err);}
+    // )
     // 获取用户信息
     qq.getSetting({
       success: res => {
+        // if (!res.authSetting['scope.userLocation']) {
+        //   wx.authorize({
+        //     scope: 'scope.userLocation',
+        //     success() {
+        //       // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+        //
+        //     }
+        //   })
+        // }
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           qq.getUserInfo({
@@ -39,7 +51,7 @@ App({
   globalData: {
     pass1: true,
     pass2: true,
-    userInfo:{},
+    userInfo: {},
 
 
   }

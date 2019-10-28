@@ -102,6 +102,34 @@
 					"pathName": "pages/quiz/quiz",
 					"query": "",
 					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "zhanqian",
+					"pathName": "pages/zhanqian/xuexi",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "pet",
+					"pathName": "pages/pet/pet",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "quiz1",
+					"pathName": "pages/quiz1/quiz",
+					"query": "",
+					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "jianwen",
+					"pathName": "pages/jianwen/jianwen",
+					"query": "",
+					"scene": ""
 				}
 			]
 		}

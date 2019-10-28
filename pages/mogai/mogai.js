@@ -12,6 +12,14 @@ data:{
     {
       zhangjie:'第二章',
       title:'穷奇道截杀'
+    },
+    {
+      zhangjie:'第三章',
+      title:'欲加之罪'
+    },
+    {
+      zhangjie:'第四章',
+      title:'不夜天城'
     }
   ]
 },
@@ -33,10 +41,11 @@ data:{
     var i=e.target.dataset.index
     var passed='pass'+i
     const pass=wx.getStorageSync(passed)
+    console.log(e.target.dataset.url);
 
-    if(pass.num==0){
+    if(pass.right==true){
       wx.navigateTo({
-        url:'../../pages/qiongqi/xuexi'
+        url:e.target.dataset.url
       })
     }
     else{
@@ -50,6 +59,8 @@ data:{
   },
 
   onLoad(){
+
+
 
 
 

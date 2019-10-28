@@ -15,7 +15,7 @@
 
 .slot{
   position: absolute;
-  font-size: 44rpx;
+  font-size: 36rpx;
   font-family: 'Fangzhengke';
   font-weight: bolder;
   color:#002e73;

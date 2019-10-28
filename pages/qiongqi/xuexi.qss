@@ -21,7 +21,7 @@ page{
 .texts{
 
   font-family: 'Fangzhengke';
-  font-size:44rpx;
+  font-size:40rpx;
   margin: 0rpx 100rpx 80rpx 100rpx;
 
 }

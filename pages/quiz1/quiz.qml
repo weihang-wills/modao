@@ -31,10 +31,10 @@
 
     <swiper-item>
       <view class='contain'>
-<image src='http://pwh.img.jogiter.cn/modao/medal.png' class='medal'/>
+<image src='http://pwh.img.jogiter.cn/modao/fujiati.png' class='medal'/>
 <image src='{{userInfo.avatarUrl}}' class='avatar'/>
 <text style='margin-top:20rpx;margin-bottom:20rpx;'>{{userInfo.nickName}}</text>
-<text>恭喜你通过魔道十级考试！</text>
+<text>人不风流枉少年，希望你依如少年！</text>
 
         </view>
     </swiper-item>

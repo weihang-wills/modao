@@ -1,0 +1,13 @@
+{
+
+  "usingComponents": {
+    "select":"../utils/select/select",
+    "home":"../utils/home/home"
+  },
+  "navigationBarBackgroundColor": "#091423",
+  "navigationBarTitleText": "魔道附加题",
+  "backgroundColorTop": "#ffffff",
+  "backgroundColorBottom": "#ffffff",
+  "backgroundColor":"#ffffff"
+
+}

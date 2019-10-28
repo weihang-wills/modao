@@ -33,7 +33,7 @@ swiper {
 
 .medal{
   width:327rpx;
-  height: 341rpx;
+  height: 317rpx;
 
 }
 

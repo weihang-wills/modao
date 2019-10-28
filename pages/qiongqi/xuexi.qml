@@ -3,7 +3,7 @@
 <view class='container2' style="background:url('{{background}}');background-size:100%;">
 
 <view wx:if='{{selected}}'>
-<view class='texts'>{{main.title}}</view>
+<view class='texts'><text>{{main.title}}</text></view>
 <view class='hint'>{{main.hint}}</view>
 
 <view wx:for='{{main.selects}}'>
@@ -14,7 +14,7 @@ bindtap='navigator'>{{item.title}}</select>
 
 <view wx:else>
 <view style='margin-top:220rpx;'/>
-  <view class='texts'>{{main.title}}</view>
+  <view class='texts'><text>{{main.title}}</text></view>
   <view class='hint'>{{main.hint}}</view>
 
   <view wx:if='{{main.selects.over}}'>
@@ -23,10 +23,13 @@ bindtap='navigator'>{{item.title}}</select>
   <view wx:else>
   <select bindtap='go'>{{main.selects.title}}</select>
   </view>
-  <button class='select' open-type='share' >
-  <select bindtap='restart' style='margin:0rpx;padding:0rpx'>分享重来</select>
-  </button>
-  <ad style='position:relative;margin-top:40rpx;' unit-id="1dc18260e632cd725eee152b57205601"></ad>
+
+  <view class='ad' style='margin-top:60rpx;'>
+      <view style='text-align:center;margin-bottom:10rpx'>点击广告可以再次获得答题机会</view>
+      <view capture-bind:tap='restart' >
+  <ad unit-id="d2bc2276ad7163a1e086faa49e176fe2" type="card"></ad>
+  </view>
+  </view>
 
 </view>
 

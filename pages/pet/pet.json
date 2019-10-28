@@ -1,0 +1,12 @@
+{
+
+  "usingComponents": {
+    "select":"../utils/select/select"
+  },
+  "navigationBarBackgroundColor": "#091423",
+  "navigationBarTitleText": "养忘羡",
+  "backgroundColor":"#091423",
+  "backgroundColorTop":"#091423",
+  "backgroundColorBottom":"#091423"
+
+}

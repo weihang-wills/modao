@@ -1,31 +1,29 @@
 
 
-<view class='container2' style="background:url('{{background}}');background-size:100%;">
+<view class='container3' style="background:url('{{background}}');background-size:100%;">
 
 <view wx:if='{{selected}}'>
 <view class='texts'><text>{{main.title}}</text></view>
 <view class='hint'>{{main.hint}}</view>
 
 <view wx:for='{{main.selects}}'>
-<select data-index='{{item.navigator}}'
+<select style='font-size:28rpx;' data-index='{{item.navigator}}'
 bindtap='navigator'>{{item.title}}</select>
 </view>
 </view>
 
 <view wx:else>
-<view style='margin-top:200rpx;'/>
+
   <view class='texts'><text>{{main.title}}</text></view>
   <view class='hint'>{{main.hint}}</view>
 
   <view wx:if='{{main.selects.over}}'>
-  <select bindtap='end'>{{main.selects.title}}</select>
+  <select style='font-size:28rpx;' bindtap='end'>{{main.selects.title}}</select>
   </view>
   <view wx:else>
-  <select bindtap='go'>{{main.selects.title}}</select>
+  <select style='font-size:28rpx;' bindtap='go'>{{main.selects.title}}</select>
   </view>
-  <!-- <button class='select' open-type='share' >
-  <select bindtap='restart' style='margin:0rpx;padding:0rpx'>分享重来</select>
-  </button> -->
+
   <view class='ad' style='margin-top:60rpx;'>
       <view style='text-align:center;margin-bottom:10rpx'>点击广告可以再次获得答题机会</view>
       <view capture-bind:tap='restart' >
@@ -33,10 +31,7 @@ bindtap='navigator'>{{item.title}}</select>
   </view>
   </view>
 
-
-
 </view>
-
 
 
 

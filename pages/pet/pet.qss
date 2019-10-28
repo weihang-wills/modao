@@ -1,0 +1,91 @@
+
+page{
+  background: url('http://pwh.img.jogiter.cn/petback.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 1080rpx;
+}
+
+.picture{
+  width:330rpx;
+  height: 535rpx;
+}
+
+
+.row{
+  width: 750rpx;
+
+  margin-top: 200rpx;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+
+.qqzone{
+
+  width: 269rpx;
+  height: 141rpx;
+  position: fixed;
+  top: 20rpx;
+  right:20rpx;
+  padding: 0;
+  background: none;
+}
+
+.textss{
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 60rpx 40rpx 40rpx 40rpx;
+  font-size: 28rpx;
+  color:white;
+}
+
+
+.ad{
+
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:750rpx;
+  background-color: white;
+
+}
+
+.one{
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+
+  color:#f9b770;
+  font-size: 32rpx;
+  margin: 20rpx;
+}
+
+
+.progress{
+  border-radius: 10rpx;
+  width:257rpx;
+  height: 20rpx;
+  stroke-width:20rpx;
+}
+
+.feed{
+  width:252rpx;
+  height: 80rpx;
+}

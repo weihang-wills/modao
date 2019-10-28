@@ -7,7 +7,7 @@
 
   <view class='column'>
     <view class='name'>{{innerText.name}}</view>
-    <view class='content'>{{innerText.content}}</view>
+    <text class='content'>{{innerText.content}}</text>
     <image src='{{innerText.contentimg}}' class='contentimg' mode='widthFix' />
     <view class='address'>{{innerText.address}}</view>
 

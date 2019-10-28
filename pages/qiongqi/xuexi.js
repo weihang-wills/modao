@@ -1,4 +1,4 @@
-const app=getApp()
+const app = getApp()
 
 Page({
 
@@ -36,13 +36,13 @@ Page({
       },
       {
         background: 'http://pwh.img.jogiter.cn/qingxin.png',
-        title: '清心铃压制住了戾气，无羡渐渐神志恢复，召回了温宁。金子轩说出了阿离正在等你，无羡听闻后心中感动撤回了鬼气，金子轩并挡在无羡前面命令金子勋勿要轻举妄动。穷奇道一事就此调停。金子轩终于把无羡请到金麟台参加满月酒。',
+        title: '清心铃压制住了戾气，无羡渐渐神志恢复，召回了温宁。\n\r金子轩说“阿离正在等你”，无羡听闻后心中感动撤回了鬼气，金子轩并挡在无羡前面命令金子勋勿要轻举妄动。\n\r穷奇道一事就此调停，金子轩终于把无羡请到金麟台参加满月酒。',
         over: false,
         buttonword: '继续下一章'
       },
       {
         background: 'http://pwh.img.jogiter.cn/yinhufu.png',
-        title: '阴虎符被驱使发动了万尸暴走，方圆十里鬼哭狼嚎，一阵阵戾气直接压向金氏众人。金子轩口中说阿离正在等你，但无羡已经进入暴走状态听不进去，直接对金子勋和金子轩鬼气穿心，虐杀在场所有金氏子弟，再也有口难辩。',
+        title: '阴虎符被驱使发动了万尸暴走，方圆十里鬼哭狼嚎，一阵阵戾气直接压向金氏众人。\n\r金子轩口对无羡说阿离正在等你，但无羡已经进入暴走状态听不进去，直接对金子勋和金子轩鬼气穿心，虐杀在场所有金氏子弟，再也有口难辩。',
         over: true,
         buttonword: '退出游戏'
       },
@@ -56,6 +56,7 @@ Page({
 
 
   navigator(e) {
+
 
     console.log(e);
     var i = e.target.dataset.index
@@ -76,26 +77,45 @@ Page({
 
 
 
-
-
     })
 
 
-    wx.setStorage({
-      key: 'pass2',
-      data: {
-pass:false,
-num:i,
+    if(i==1){
 
-      },
-      success() {
-        console.log('儲存false成功');
-      }
-    })
+      wx.setStorage({
+        key:'pass2',
+        data:{
+          pass:false,
+          num:i,
+          right:true,
+        },
+        success(){
+          console.log('儲存false成功');
+        }
+      })
+
+
+
+    }
+    else{
+      wx.setStorage({
+        key:'pass2',
+        data:{
+          pass:false,
+          num:i
+        },
+        success(){
+          console.log('儲存false成功');
+        }
+      })
+
+
+    }
 
 
 
   },
+
 
   restart() {
 
@@ -104,12 +124,21 @@ num:i,
     wx.setStorage({
       key: 'pass2',
       data: {
-pass:true,
+        pass: true,
       },
       success() {
         console.log('储存true成功');
       }
     })
+
+    wx.switchTab({
+      url: '../../pages/mogai/mogai',
+      success(){
+        console.log('刷新成功');
+      }
+    })
+
+
 
   },
 
@@ -121,23 +150,9 @@ pass:true,
   },
 
   go() {
-    wx.showModal({
-      title: '剧情开发中…',
-      content: '敬请等待下一章剧情',
-      showCancel: false,
-      confirmColor: '#002e73',
 
-      success(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-          wx.navigateBack({
-            delta: 1
-          })
-        }
-
-
-
-      }
+    wx.redirectTo({
+      url:'/pages/zhanqian/xuexi'
     })
 
 

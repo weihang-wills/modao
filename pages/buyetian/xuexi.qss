@@ -6,22 +6,6 @@ page{
 
 
 }
-.texts{
-
-  font-family: 'Fangzhengke';
-  font-size:40rpx;
-  margin: 0rpx 100rpx 80rpx 100rpx;
-
-}
-.hint{
-
-  font-size:32rpx;
-  margin: 0rpx 100rpx 0rpx 100rpx;
-  text-align: center;
-
-
-
-}
 
 .select{
   width:100%;
@@ -34,21 +18,30 @@ page{
 
 
 }
-.select::after{
-  border: none;
+.texts{
+
+  font-family: 'Fangzhengke';
+  font-size:36rpx;
+  margin: 0rpx 100rpx 80rpx 100rpx;
+
+}
+.hint{
+
+  font-size:32rpx;
+  margin: 0rpx 100rpx 0rpx 100rpx;
+  text-align: center;
 
 
 }
-
-.container2 {
-
+.container3 {
+padding-top: 140rpx;
   position: relative;
   height: 100%;
   width:100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items:baseline;
+  justify-content: flex-start;
 
   box-sizing: border-box;
   width:750rpx;
