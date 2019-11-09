@@ -13,6 +13,8 @@ Page({
 
   onLoad: function() {
 
+    console.log(this.data.canIUse);
+
 
     var pass = wx.getStorageSync('pass')
     if (pass) {
@@ -29,25 +31,33 @@ Page({
     }
 
 
-    if (app.globalData.userInfo) {
+    if (!(app.globalData.userInfo==''||null)) {
 
+      console.log(1);
+      console.log(app.globalData.userInfo);
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-      console.log(app.globalData.userInfo);
+
 
     } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
+      console.log(2);
       app.userInfoReadyCallback = res => {
+
+        console.log('回调执行');
+        console.log(res);
         this.setData({
           userInfo: res.userInfo,
           hasUserInfo: true
         })
+        app.globalData.userInfo = res.userInfo
       }
     } else {
       // 在没有 open-type=getUserInfo 版本的兼容处理
+      console.log(3);
       wx.getUserInfo({
         success: res => {
           app.globalData.userInfo = res.userInfo
@@ -152,9 +162,9 @@ Page({
 
   getUserInfo: function(e) {
     console.log(e)
-    qq.BaaS.auth.loginWithQQ(e,{syncUserProfile:'overwrite'}).then(
-      user=>{console.log(user);},err=>{}
-    )
+    // qq.BaaS.auth.loginWithQQ(e,{syncUserProfile:'overwrite'}).then(
+    //   user=>{console.log(user);},err=>{}
+    // )
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -178,6 +188,19 @@ Page({
         }
       }
     })
+
+  },
+
+  toavatar(){
+
+    if(this.data.userInfo){
+      console.log(this.data.userInfo);
+      console.log('进入头像页面');
+      wx.navigateTo({
+        url:'../../pages/canvas/canvas'
+      })
+
+    }
 
   },
 

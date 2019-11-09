@@ -10,6 +10,8 @@
   </swiper>
   </view>
 
+  
+
 
 <!-- 见闻录模块 -->
 
@@ -32,7 +34,7 @@
 
   </view>
   </view>
-  
+
 
 
   <view class='bottom'/>

@@ -29,7 +29,7 @@
           <view>重来</view>
         </view>
         <view class='column'>
-          <button open-type="share" class='iconbutton'>
+          <button open-type="share" share-type="{{59}}" class='iconbutton'>
             <image class='icon' src='../name/src/share.png' /></button>
           <view>分享</view>
         </view>

@@ -1,0 +1,94 @@
+page{
+  background: url('http://pwh.img.jogiter.cn/modao/touxiang_back.png');
+  background-size: 100%;
+}
+
+
+
+.cloth{
+
+margin: 20rpx 0rpx 20rpx 20rpx;
+  width:200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+
+
+
+}
+
+.hint{
+  margin-top:20rpx;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+}
+
+.setavatar{
+  margin: 40rpx;
+  width:371rpx;
+  height:98rpx;
+  padding: 0;
+  background: none;
+
+}
+.bottom{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 380rpx;
+
+
+}
+.back{
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  opacity: 0.7;
+  width: inherit;
+  height: inherit;
+}
+
+.item{
+  display: inline-block;
+}
+
+.scroll{
+
+  width: 100%;
+
+
+  white-space: nowrap;
+
+
+
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.canvas{
+  margin-top: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fc730e;
+  font-weight: bolder;
+
+}
+
+.ad {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  background-color: white;
+  z-index: 100;
+}

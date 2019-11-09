@@ -26,6 +26,14 @@
     </view>
 
 
+
+    <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toavatar'>
+      <image class='testcard1' src='../newindex/src/touxiangrukou.png' />
+    </button>
+
+
+
+
     <navigator url="/pages/jianwen/jianwen" hover-class="navigator-hover">
       <image class='testcard' src='../newindex/src/jianwenlu.png' />
     </navigator>
@@ -65,6 +73,8 @@
       </view>
 
     </button>
+
+    <ad test-banner-type='three' style='width:632rpx;height:217rpx;padding=0rpx;' unit-id="eeeff4602aa805cb904a064ec3b2074d"></ad>
 
     <navigator url="/pages/index/index" hover-class="navigator-hover">
       <image class='testcard' src='../newindex/src/baoxiao.png' />

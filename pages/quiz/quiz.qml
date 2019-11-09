@@ -44,6 +44,7 @@
 
   <button wx:if='{{current==14}}'class='iconbutton'
   open-type='share'
+  share-type="{{59}}"
   style='margin-top:40rpx;'
   >
     <image class='icon' src='../index/src/sharegreen.png' />

@@ -34,7 +34,7 @@
 <image src='http://pwh.img.jogiter.cn/modao/fujiati.png' class='medal'/>
 <image src='{{userInfo.avatarUrl}}' class='avatar'/>
 <text style='margin-top:20rpx;margin-bottom:20rpx;'>{{userInfo.nickName}}</text>
-<text>人不风流枉少年，希望你依如少年！</text>
+<text>人不轻狂枉少年，希望你依如少年！</text>
 
         </view>
     </swiper-item>
@@ -44,6 +44,7 @@
 
   <button wx:if='{{current==14}}'class='iconbutton'
   open-type='share'
+  share-type="{{59}}"
   style='margin-top:40rpx;'
   >
     <image class='icon' src='../index/src/sharegreen.png' />
