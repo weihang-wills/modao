@@ -1,7 +1,8 @@
 <view class='canvas'>
   <view style='margin:20rpx;font-size: 36rpx;'>我的头像</view>
-  <canvas style="width: 320rpx; height: 320rpx;border-radius：5px;" canvas-id="firstCanvas">
+  <canvas style="width: 160px; height: 160px;border-radius：5px;" canvas-id="firstCanvas">
     <image wx:if="{{canvasback}}" src='{{userInfo.avatarUrl}}' style="width: 320rpx; height: 320rpx;" /></canvas>
+    <!-- 记住：canvas的长宽一定要以px为单位，否则图片在其他机型上会错位 -->
 
 
   <button bindtap='setavatar' class='setavatar'>
@@ -17,6 +18,15 @@
   <view class='hint'>点选以下头像挂件，就可预览效果</view>
 
   <scroll-view scroll-x class='scroll'>
+
+    <view class='item'>
+        <view class='col'>
+          <image class='cloth' src='../../utils/chenqingfengliu.png' bindtap='ad' data-num='4'/>
+          <text style='color:#c50b07;'>陈情风流</text>
+        </view>
+          </view>
+
+
 <view class='item'>
     <view class='col'>
       <image class='cloth' src='../../utils/zipao.png' bindtap='ad' data-num='1' />
@@ -39,20 +49,15 @@
       </view>
 
 
-      <view class='item'>
-          <view class='col'>
-            <image class='cloth' src='../../utils/qidai.png' />
-            <text>陈情风流</text>
-          </view>
-            </view>
+                <view class='item'>
+                    <view class='col'>
+                      <image class='cloth' src='../../utils/qidai.png' />
+                      <text>黑缎降灾</text>
+                    </view>
+                      </view>
 
 
-            <view class='item'>
-                <view class='col'>
-                  <image class='cloth' src='../../utils/qidai.png' />
-                  <text>黑缎降灾</text>
-                </view>
-                  </view>
+
 
 
 

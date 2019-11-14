@@ -6,27 +6,28 @@ Page({
     canvasimgbg: '',
     canvasfront: '',
     qqavatar: '',
-    canvasback:true,
-    ad:false,
-    num:'',
+    canvasback: true,
+    ad: false,
+    num: '',
 
     fronts: [
       '../../utils/zipaofront.png',
       '../../utils/baipaofront.png',
       '../../utils/jinxingxuelangfront.png',
+      '../../utils/chenqingfengliufront.png',
 
     ]
 
   },
 
-  ad(e){
+  ad(e) {
 
     console.log(e);
-    var num = Number(e.currentTarget.dataset.num)-1;
+    var num = Number(e.currentTarget.dataset.num) - 1;
 
     this.setData({
-      ad:true,
-      num:num,
+      ad: true,
+      num: num,
     })
   },
 
@@ -85,7 +86,7 @@ Page({
       success(res) {
         console.log("success" + res);
         wx.showToast({
-          title:'更换成功！'
+          title: '更换成功！'
         })
       },
       fail(res) {
@@ -98,10 +99,10 @@ Page({
 
   draw() {
     this.setData({
-      ad:false,
+      ad: false,
     })
 
-    var num=this.data.num
+    var num = this.data.num
 
     var context = wx.createCanvasContext('firstCanvas')
     var that = this
@@ -129,7 +130,7 @@ Page({
               that.setData({
                 canvasfront: '/' + res.path,
                 // 要在前面加个斜杠
-                canvasback:false,
+                canvasback: false,
               })
 
 
