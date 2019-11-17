@@ -4,6 +4,7 @@ page{
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 1080rpx;
+  background-color: #091423;
 }
 
 .picture{

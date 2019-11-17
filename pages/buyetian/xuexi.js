@@ -161,23 +161,8 @@ if(i==2){
   },
 
   go() {
-    wx.showModal({
-      title: '剧情开发中…',
-      content: '敬请等待下一章剧情',
-      showCancel: false,
-      confirmColor: '#002e73',
-
-      success(res) {
-        if (res.confirm) {
-          console.log('用户点击确定')
-          wx.navigateBack({
-            delta: 1
-          })
-        }
-
-
-
-      }
+    wx.redirectTo({
+      url:'/pages/ajing/xuexi'
     })
 
 

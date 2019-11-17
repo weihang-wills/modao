@@ -16,7 +16,9 @@
     "pages/pet/pet",
     "pages/quiz1/quiz",
     "pages/jianwen/jianwen",
-    "pages/canvas/canvas"
+    "pages/canvas/canvas",
+    "pages/ajing/xuexi",
+    "pages/luyu/xuexi"
 
   ],
   "permission": {

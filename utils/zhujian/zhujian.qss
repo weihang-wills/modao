@@ -17,7 +17,7 @@
 }
 .all{
   position: relative;
-  margin-top: 40rpx;
+  margin-top: 20rpx;
   display: flex;
   flex-direction: column;
   justify-content: center;

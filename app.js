@@ -2,6 +2,10 @@
 App({
   onLaunch: function(res) {
     console.log(res);
+    if(res.entryDataHash){
+      this.globalData.entryDataHash=res.entryDataHash
+
+    }
     // 展示本地存储能力
     // var logs = qq.getStorageSync('logs') || []
     // logs.unshift(Date.now())
@@ -54,6 +58,7 @@ App({
     pass1: true,
     pass2: true,
     userInfo: '',
+    entryDataHash:'',
 
 
   }

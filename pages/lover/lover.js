@@ -1,5 +1,8 @@
+const app=getApp();
 Page({
   data: {
+    entryDataHash:'',
+    sharetype:59,
     home: false,
     background: 'http://pwh.img.jogiter.cn/modao/loverbackground.png',
     choose: true,
@@ -169,7 +172,8 @@ Page({
     }
     return {
       title: this.data.choose ? '看看你在魔道祖师的另一半是谁' : '我在魔道祖师里面的道侣是' + this.data.result.title,
-      path: '/pages/lover/lover?home=1'
+      path: '/pages/lover/lover?home=1',
+      entryDataHash:this.data.entryDataHash,
 
     }
   },
@@ -181,6 +185,14 @@ Page({
         home: true,
       })
 
+    }
+
+    if(app.globalData.entryDataHash){
+      console.log('entryDataHash存在');
+      this.setData({
+        entryDataHash:app.globalData.entryDataHash,
+        sharetype:36,
+      })
     }
 
 
