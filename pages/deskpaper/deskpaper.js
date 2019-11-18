@@ -83,6 +83,7 @@ Page({
 
 
   onLoad() {
+    console.log('test分支');
 
     var that = this;
 
