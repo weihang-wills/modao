@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+
+  },
+  "navigationBarTitleText": "魔道壁纸",
+  "navigationBarTextStyle":"white",
+  "backgroundColorTop":"#091423",
+  "backgroundColorBottom":"#091423",
+  "backgroundColor":"#091423"
+}

@@ -18,7 +18,8 @@
     "pages/jianwen/jianwen",
     "pages/canvas/canvas",
     "pages/ajing/xuexi",
-    "pages/luyu/xuexi"
+    "pages/luyu/xuexi",
+    "pages/deskpaper/deskpaper"
 
   ],
   "permission": {
@@ -51,6 +52,12 @@
 
         "iconPath": "utils/index.png"
 
+      },
+      {
+        "pagePath": "pages/deskpaper/deskpaper",
+        "text": "壁纸",
+        "selectedIconPath": "utils/bizhired.png",
+        "iconPath": "utils/bizhi.png"
       },
       {
         "pagePath": "pages/mogai/mogai",

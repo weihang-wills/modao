@@ -6,7 +6,7 @@
 <view class='texts'><text>{{main.title}}</text></view>
 <view class='hint'>{{main.hint}}</view>
 
-<view wx:for='{{main.selects}}'>
+<view wx:for='{{main.selects}}' wx:key='index'>
 <select style='font-size:28rpx;' data-index='{{item.navigator}}'
 bindtap='navigator'>{{item.title}}</select>
 </view>

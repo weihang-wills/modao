@@ -1,0 +1,78 @@
+
+
+.flow{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  margin: 20rpx;
+
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+
+
+}
+
+.avatar{
+  width:340rpx;
+  height: 340rpx;
+  margin:10rpx;
+  border-radius: 8rpx;
+}
+
+scroll-view{
+
+  height: 100%;
+
+}
+
+.notfocus{
+  padding: 10rpx 40rpx 10rpx 40rpx;
+  color:white;
+  font-size: 32rpx;
+  border-radius: 40rpx;
+}
+
+.focus{
+  color:white;
+    padding: 10rpx 40rpx 10rpx 40rpx;
+    background-color: #fd7625;
+    font-size: 32rpx;
+    border-radius: 40rpx;
+
+}
+
+
+.image{
+
+  width:340rpx;
+  height: 500rpx;
+  margin:10rpx;
+  border-radius: 8rpx;
+}
+
+.ad {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  background-color: white;
+  z-index: 100;
+}
