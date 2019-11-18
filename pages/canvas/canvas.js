@@ -31,6 +31,18 @@ Page({
     })
   },
 
+  onShareAppMessage(res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '魔道头像挂件之《陈情风流》上线啦~快来试试吧',
+      path: '/pages/newindex/newindex',
+
+    }
+  },
+
 
   onLoad() {
 

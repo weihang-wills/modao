@@ -81,6 +81,18 @@ Page({
     this.preview(this.data.src)
   },
 
+  onShareAppMessage(res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '魔道壁纸头像，总有一款适合你',
+      path: '/pages/deskpaper/deskpaper',
+
+    }
+  },
+
 
   onLoad() {
     console.log('test分支');
