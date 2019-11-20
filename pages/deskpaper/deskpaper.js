@@ -5,7 +5,7 @@ Page({
     current: 0,
     flow: ['https://ftp.bmp.ovh/imgs/2019/11/1e0a53879057889b.jpg',
       'https://ftp.bmp.ovh/imgs/2019/11/54f493604217198f.jpeg',
-      'http://pwh.img.jogiter.cn/bizhi/3.jpg',
+      'http://img.pangweihang.cn/bizhi/3.jpg',
     ],
     avatars: [{
         left: 'https://ftp.bmp.ovh/imgs/2019/11/1e0a53879057889b.jpg',
@@ -13,7 +13,7 @@ Page({
       },
       {
         left: 'https://ftp.bmp.ovh/imgs/2019/11/54f493604217198f.jpeg',
-        right: 'http://pwh.img.jogiter.cn/bizhi/3.jpg'
+        right: 'http://img.pangweihang.cn/bizhi/3.jpg'
       },
 
 

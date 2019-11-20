@@ -3,7 +3,7 @@ const app=getApp()
 Page({
 data:{
 
-  background:'http://pwh.img.jogiter.cn/modao/mogaiback.png',
+  background:'http://img.pangweihang.cn/modao/mogaiback.png',
   zhangs:[
     {
       zhangjie:'第一章',
@@ -85,7 +85,7 @@ data:{
     //       console.log('去缓存图片')
     //
     //       wx.downloadFile({
-    //           url: 'https://pwh.img.jogiter.cn/modao/mogaiback.png',
+    //           url: 'https://img.pangweihang.cn/modao/mogaiback.png',
     //           success: function(res) {
     //             if (res.statusCode === 200) {
     //               console.log('图片下载成功' + res.tempFilePath)

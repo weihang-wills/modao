@@ -11,7 +11,7 @@ Page({
       [
 
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/jiangchen.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/jiangchen.png',
           name: '江澄',
           content: '老子脱单了',
           contentimg: '',
@@ -70,10 +70,10 @@ Page({
 
 
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/avatar.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/avatar.png',
           name: '金凌',
           content: '舅舅睡着了',
-          contentimg: 'http://pwh.img.jogiter.cn/modao/beizi.png',
+          contentimg: 'http://img.pangweihang.cn/modao/beizi.png',
           address: '云梦·莲花坞',
           commentlogo: '../../utils/card/src/commentlogo.png',
           heart: '../../utils/card/src/heart.png',
@@ -107,10 +107,10 @@ Page({
           ]
         },
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/weiwuxian.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/weiwuxian.png',
           name: '魏无羡',
           content: '你大舅你二舅都是你舅',
-          contentimg: 'http://pwh.img.jogiter.cn/modao/motousha.png',
+          contentimg: 'http://img.pangweihang.cn/modao/motousha.png',
           address: '云梦·莲花坞·湖心亭',
           commentlogo: '../../utils/card/src/commentlogo.png',
           heart: '../../utils/card/src/heart.png',
@@ -165,10 +165,10 @@ Page({
 
 
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/jiangyanli.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/jiangyanli.png',
           name: '江厌离',
           content: '哎呀阿羡阿澄你们别吵了，看看你们小时候的照片消消气…',
-          contentimg: 'http://pwh.img.jogiter.cn/modao/sanjiedi.png',
+          contentimg: 'http://img.pangweihang.cn/modao/sanjiedi.png',
           address: '云梦·莲花坞',
           commentlogo: '../../utils/card/src/commentlogo.png',
           heart: '../../utils/card/src/heart.png',
@@ -215,10 +215,10 @@ Page({
 
 
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/jiangchen.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/jiangchen.png',
           name: '江澄',
           content: '靠，一个个都脱单了',
-          contentimg: 'http://pwh.img.jogiter.cn/modao/xiangai.png',
+          contentimg: 'http://img.pangweihang.cn/modao/xiangai.png',
           address: '云梦·莲花坞',
           commentlogo: '../../utils/card/src/commentlogo.png',
           heart: '../../utils/card/src/heart.png',
@@ -271,10 +271,10 @@ Page({
       ],
 
       [{
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/weiwuxian.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/weiwuxian.png',
           name: '魏无羡',
           content: '哈哈哈，小蓝湛真可爱(*╹▽╹*)害羞',
-          contentimg: 'http://pwh.img.jogiter.cn/modao/child.jpg',
+          contentimg: 'http://img.pangweihang.cn/modao/child.jpg',
           address: '姑苏·云深不知处',
           commentlogo: '../../utils/card/src/commentlogo.png',
           heart: '../../utils/card/src/heart.png',
@@ -322,10 +322,10 @@ Page({
           ]
         },
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/weiwuxian.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/weiwuxian.png',
           name: '魏无羡',
           content: '我现在深刻体会到我当初言论的正确，灵气也是气，怨气也是气，怨气怎的就不能为人所用呢？',
-          contentimg: 'http://pwh.img.jogiter.cn/modao/chuidi.jpg',
+          contentimg: 'http://img.pangweihang.cn/modao/chuidi.jpg',
           address: '姑苏·彩衣镇',
           commentlogo: '../../utils/card/src/commentlogo.png',
           heart: '../../utils/card/src/heart.png',
@@ -345,7 +345,7 @@ Page({
           ]
         },
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/jingyi.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/jingyi.png',
           name: '蓝景仪',
           content: '魏前辈，静室有网么？先生把兰室的网掐了…@魏无羡',
           contentimg: '',
@@ -397,7 +397,7 @@ Page({
         },
 
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/lanxichenavatar.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/lanxichenavatar.png',
           name: '蓝曦臣',
           content: '…我保温杯里面的茶叶水怎么是辣的…',
           contentimg: '',
@@ -463,10 +463,10 @@ Page({
       ],
       // 义城
       [{
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/xueyang.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/xueyang.png',
           name: '薛洋',
           content: '举…举一反三？',
-          contentimg: 'http://pwh.img.jogiter.cn/modao/jiazhu.png',
+          contentimg: 'http://img.pangweihang.cn/modao/jiazhu.png',
           address: '义城·义庄',
           commentlogo: '../../utils/card/src/commentlogo.png',
           heart: '../../utils/card/src/heart.png',
@@ -520,10 +520,10 @@ Page({
         },
 
         {
-          avatarimg: 'http://pwh.img.jogiter.cn/modao/ajing.png',
+          avatarimg: 'http://img.pangweihang.cn/modao/ajing.png',
           name: '阿菁',
           content: '我们出游啦！！开心！',
-          contentimg: 'http://pwh.img.jogiter.cn/modao/ajingback.png',
+          contentimg: 'http://img.pangweihang.cn/modao/ajingback.png',
           address: '义城·郊外',
           commentlogo: '../../utils/card/src/commentlogo.png',
           heart: '../../utils/card/src/heart.png',
@@ -629,31 +629,31 @@ Page({
 
       if (options.back == 'gusu') {
         that.setData({
-          background: 'http://pwh.img.jogiter.cn/modao/gusuback.png',
+          background: 'http://img.pangweihang.cn/modao/gusuback.png',
           innertext: that.data.innertexts[1]
 
         })
       } else if (options.back == 'lianhuawu') {
         that.setData({
-          background: 'http://pwh.img.jogiter.cn/modao/lianhuawu.png',
+          background: 'http://img.pangweihang.cn/modao/lianhuawu.png',
           innertext: that.data.innertexts[0]
 
         })
       } else if (options.back == 'yicheng') {
         that.setData({
-          background: 'http://pwh.img.jogiter.cn/modao/yichengback.png',
+          background: 'http://img.pangweihang.cn/modao/yichengback.png',
           innertext: that.data.innertexts[2]
 
         })
       } else if (options.back == 'jinlintai') {
         that.setData({
-          background: 'http://pwh.img.jogiter.cn/modao/jinlintai.png',
+          background: 'http://img.pangweihang.cn/modao/jinlintai.png',
           innertext: that.data.innertexts[3]
 
         })
       }else if (options.back == 'bujingshi') {
         that.setData({
-          background: 'http://pwh.img.jogiter.cn/modao/bujingshi.png',
+          background: 'http://img.pangweihang.cn/modao/bujingshi.png',
           innertext: that.data.innertexts[4]
 
         })

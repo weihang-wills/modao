@@ -3,7 +3,7 @@ const app = getApp()
 Page({
 
   data: {
-    background: 'http://pwh.img.jogiter.cn/modao/qiongqidao.png',
+    background: 'http://img.pangweihang.cn/modao/qiongqidao.png',
     selected: true,
 
     main: {
@@ -29,19 +29,19 @@ Page({
     selections: [
 
       {
-        background: 'http://pwh.img.jogiter.cn/yinhufu.png',
+        background: 'http://img.pangweihang.cn/yinhufu.png',
         title: '魏无羡伸手摸向随便，停下了手中的陈情，这时金子勋和金氏子弟摆脱了凶尸，立刻向无羡万箭齐发，无羡灵气微弱无法用剑，金子轩急忙帮忙格挡，仍挡不住几支利箭射向无羡，魏无羡身中箭死于穷奇道。',
         over: true,
         buttonword: '退出游戏'
       },
       {
-        background: 'http://pwh.img.jogiter.cn/qingxin.png',
+        background: 'http://img.pangweihang.cn/qingxin.png',
         title: '清心铃压制住了戾气，无羡渐渐神志恢复，召回了温宁。\n\r金子轩说“阿离正在等你”，无羡听闻后心中感动撤回了鬼气，金子轩并挡在无羡前面命令金子勋勿要轻举妄动。\n\r穷奇道一事就此调停，金子轩终于把无羡请到金麟台参加满月酒。',
         over: false,
         buttonword: '继续下一章'
       },
       {
-        background: 'http://pwh.img.jogiter.cn/yinhufu.png',
+        background: 'http://img.pangweihang.cn/yinhufu.png',
         title: '阴虎符被驱使发动了万尸暴走，方圆十里鬼哭狼嚎，一阵阵戾气直接压向金氏众人。\n\r金子轩口对无羡说阿离正在等你，但无羡已经进入暴走状态听不进去，直接对金子勋和金子轩鬼气穿心，虐杀在场所有金氏子弟，再也有口难辩。',
         over: true,
         buttonword: '退出游戏'

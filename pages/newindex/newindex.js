@@ -5,7 +5,7 @@ Page({
     pass: '未通过',
     pass1:'未通过',
     logs: [],
-    background: 'http://pwh.img.jogiter.cn/backgroundindex.png',
+    background: 'http://img.pangweihang.cn/backgroundindex.png',
     userInfo: '',
     hasUserInfo: false,
     canIUse: qq.canIUse('button.open-type.getUserInfo'),

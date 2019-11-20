@@ -31,7 +31,7 @@
 
     <swiper-item>
       <view class='contain'>
-<image src='http://pwh.img.jogiter.cn/modao/fujiati.png' class='medal'/>
+<image src='http://img.pangweihang.cn/modao/fujiati.png' class='medal'/>
 <image src='{{userInfo.avatarUrl}}' class='avatar'/>
 <text style='margin-top:20rpx;margin-bottom:20rpx;'>{{userInfo.nickName}}</text>
 <text>人不轻狂枉少年，希望你依如少年！</text>

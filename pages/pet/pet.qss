@@ -1,6 +1,6 @@
 
 page{
-  background: url('http://pwh.img.jogiter.cn/petback.png');
+  background: url('http://img.pangweihang.cn/petback.png');
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 1080rpx;
