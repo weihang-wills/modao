@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+
+  },
+  "navigationBarTitleText": "我的成分",
+  "navigationBarTextStyle":"white",
+  "backgroundColorTop":"#091423",
+  "backgroundColorBottom":"#091423",
+  "backgroundColor":"#091423"
+}

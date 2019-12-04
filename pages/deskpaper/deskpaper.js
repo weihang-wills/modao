@@ -19,7 +19,7 @@ Page({
 
     ],
     src: '',
-    video: true,
+    video: false,
     ad: false,
 
 

@@ -12,7 +12,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
+
 
 .column{
   display: flex;
@@ -21,6 +23,30 @@
   align-items: center;
 
 }
+.adbottom {
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  background-color: white;
+  z-index: 1002;
+}
+.iconbutton{
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  margin-bottom: 20rpx;
+
+  width:120rpx;
+  height: 120rpx;
+  padding: 0;
+  background: none;
+
+
+}
+
 
 .icon{
   width:120rpx;

@@ -1,0 +1,67 @@
+page {
+  background: url('https://ftp.bmp.ovh/imgs/2019/11/acc58a4fb9f7e20f.png');
+  background-size: 100%;
+}
+
+
+
+
+.container1,.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 340rpx 40rpx;
+  color: #004986;
+}
+
+.container2{
+  padding: 340rpx 120rpx;
+}
+
+.container2 .title{
+  font-size: 60rpx;
+  margin:20rpx 0rpx;
+  color: #a00f64;
+}
+
+.container2 .result{
+  font-size: 40rpx;
+  color: #a00f64;
+  margin-bottom: 100rpx;
+
+}
+
+
+
+
+.picker {
+  text-align: center;
+  font-size: 36rpx;
+  width: 60%;
+  border: solid 4rpx transparent;
+  border-bottom-color: #004986;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkresult {
+  width: 332rpx;
+  height: 89rpx;
+}
+
+.button1 {
+  width: 332rpx;
+  height: 89rpx;
+  padding: 0rpx;
+  border: none;
+  margin-top: 40rpx;
+}
+
+.holder {
+  text-align: center;
+  color: #004986;
+}

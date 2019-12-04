@@ -53,7 +53,7 @@
 
   </view>
   <view wx:if='{{ad}}' class='ad'>
-      <view style='text-align:center;margin-bottom:10rpx'>点击广告可以再次获得答题机会</view>
+      <view style='text-align:center;margin-bottom:10rpx'>点击广告获得再次答题的机会</view>
       <view capture-bind:tap='ad' >
   <ad unit-id="fbe126be3fb949a6058e74db9689d6e0" type="card"></ad>
   </view>

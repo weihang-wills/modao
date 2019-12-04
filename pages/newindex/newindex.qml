@@ -1,3 +1,11 @@
+
+
+<view bindtap='video' class='tianguan'>
+<image src='http://img.pangweihang.cn/tianguan/poster1.png' class='tianguanimg'/>
+<text class='tianguantext'>天官预热阵地</text>
+  </view>
+
+
 <view style="background:url('{{background}}');background-size: 100%;background-repeat: no-repeat;">
   <view class='container1'>
     <view class='row'>
@@ -25,7 +33,9 @@
 
     </view>
 
-
+    <navigator url="/pages/zucheng/zucheng" hover-class="navigator-hover">
+      <image class='testcard' src='../newindex/src/zuchengrukou.png' />
+    </navigator>
 
     <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toavatar'>
       <image class='testcard1' src='../newindex/src/touxiangrukou.png' />
@@ -35,7 +45,7 @@
 
 
     <navigator url="/pages/jianwen/jianwen" hover-class="navigator-hover">
-      <image class='testcard' src='../newindex/src/jianwenlu.png' />
+      <image class='testcard' style='margin-top:0rpx;' src='../newindex/src/jianwenlu.png' />
     </navigator>
 
     <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toquiz'>
@@ -110,3 +120,11 @@
 
 
 </view>
+
+<view wx:if='{{ad}}' class='adbottom'>
+    <view style='text-align:center;margin-bottom:10rpx'>点击广告查看结果</view>
+    <view capture-bind:tap='ad' >
+<ad unit-id="2d8a13465bb0b9f4d56d9ddc8083ca96" type="card"></ad>
+</view>
+
+  </view>

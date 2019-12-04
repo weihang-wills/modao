@@ -2,6 +2,32 @@ page {
   background-color: #192f53;
 }
 
+.tianguan{
+  position: fixed;
+  right:20rpx;
+  bottom: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+
+
+}
+
+.tianguanimg{
+  width:120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: solid 6rpx;
+  border-color: #f05c5e;
+}
+
+.tianguantext{
+  color:white;
+  font-size: 26rpx;
+}
+
 .ad {
   background-color: white;
   margin: 0rpx 40rpx 40rpx 40rpx;

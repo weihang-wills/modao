@@ -226,45 +226,7 @@ Page({
         home: true,
       })
     }
-    // //
-    //     var that = this
-    //
-    //     const path = wx.getStorageSync('baoxiaoback')
-    //     if (path) {
-    //       console.log('path====', path)
-    //       this.setData({
-    //         background: path
-    //       })
-    //     } else {
-    //       console.log('去缓存图片')
-    //
-    //       wx.downloadFile({
-    //           url: 'https://img.pangweihang.cn/modao/baoxiaobackground.png',
-    //           success: function(res) {
-    //             if (res.statusCode === 200) {
-    //               console.log('图片下载成功' + res.tempFilePath)
-    //
-    //               const fs = wx.getFileSystemManager()
-    //
-    //               fs.saveFile({
-    //                 tempFilePath: res.tempFilePath, // 传入一个临时文件路径
-    //                 success(res) {
-    //                   console.log('图片缓存成功', res.savedFilePath) //
-    //                   wx.setStorageSync('baoxiaoback', res.savedFilePath)
-    //                   const path = wx.getStorageSync('baoxiaoback')
-    //                   that.setData({
-    //                     background: path
-    //                   })
-    //
-    //                 }
-    //               })
-    //             } else {
-    //               console.log('响应失败', res.statusCode)
-    //             }
-    //           }
-    //         })
-    //       }
-    //       //
+
 
 
 

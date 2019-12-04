@@ -1,9 +1,37 @@
 //app.js
+const updateManager = qq.getUpdateManager()
 App({
+
+  onShow(){
+    // 更新part
+        updateManager.onCheckForUpdate(function(res) {
+          // 请求完新版本信息的回调
+          console.log('有更新信息',res.hasUpdate)
+        })
+
+        updateManager.onUpdateReady(function() {
+          wx.showModal({
+            title: '本应用有新版本',
+            content: '新版本已准备好，是否更新应用？',
+            success(res) {
+              if (res.confirm) {
+                // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
+                updateManager.applyUpdate()
+              }
+            }
+          })
+        })
+
+
+
+  },
   onLaunch: function(res) {
+
+
+
     console.log(res);
-    if(res.entryDataHash){
-      this.globalData.entryDataHash=res.entryDataHash
+    if (res.entryDataHash) {
+      this.globalData.entryDataHash = res.entryDataHash
 
     }
     // 展示本地存储能力
@@ -17,7 +45,7 @@ App({
     })
 
     console.log(this.globalData.userInfo == '' || null);
-    console.log('hh'+!this.globalData.userInfo);
+    console.log('hh' + !this.globalData.userInfo);
 
 
 
@@ -58,7 +86,7 @@ App({
     pass1: true,
     pass2: true,
     userInfo: '',
-    entryDataHash:'',
+    entryDataHash: '',
 
 
   }

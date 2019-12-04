@@ -23,7 +23,7 @@
       <view class='column'>
         <view wx:for='{{avatars}}' wx:key='index'>
           <view class='flow'>
-            <image bindtap='add' data-src='{{item.lef}}' mode='aspectFill' class='avatar' src='{{item.left}}' />
+            <image bindtap='add' data-src='{{item.left}}' mode='aspectFill' class='avatar' src='{{item.left}}' />
             <image bindtap='add' data-src='{{item.right}}' mode='aspectFill' class='avatar' src='{{item.right}}' />
         </view>
       </view>

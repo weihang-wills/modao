@@ -157,7 +157,7 @@ Page({
       },
       {
         title: '8.魔道中谁的笑点最低？',
-        answer: '宋岚',
+        answer: '晓星尘',
         right: false,
       },
       {

@@ -19,7 +19,9 @@
     "pages/canvas/canvas",
     "pages/ajing/xuexi",
     "pages/luyu/xuexi",
-    "pages/deskpaper/deskpaper"
+    "pages/deskpaper/deskpaper",
+    "pages/audio/audio",
+    "pages/zucheng/zucheng"
 
   ],
   "permission": {

@@ -1,7 +1,10 @@
 const app = getApp()
+var videoAd=null;
 
 Page({
   data: {
+    ad:false,
+    video:false,
     pass: '未通过',
     pass1:'未通过',
     logs: [],
@@ -11,9 +14,76 @@ Page({
     canIUse: qq.canIUse('button.open-type.getUserInfo'),
   },
 
+  video(){
+    if(this.data.video){
+
+      videoAd.load().then(() => {
+        console.log('激励视频加载成功');
+
+        videoAd.show().then(() => {
+          console.log('激励视频 广告显示成功')
+        }).catch(err => {
+          console.log('激励视频 广告显示失败')
+        })
+      }).catch(err => {
+        console.log('激励视频加载失败');
+      })
+
+    }else{
+
+      this.setData({
+        ad:true,
+      })
+
+
+    }
+  },
+
+  ad() {
+    this.setData({
+      ad: false,
+
+    })
+    wx.navigateTo({
+      url:'/pages/audio/audio'
+    })
+
+  },
+
   onLoad: function() {
 
-    console.log(this.data.canIUse);
+    console.log('canIuser',this.data.canIUse);
+
+// video part
+    // videoAd = qq.createRewardedVideoAd({
+    //   adUnitId: '89090865fe14a8631a25252f23b58517',
+    // })
+    //
+    // videoAd.onError(function(res) {
+    //   console.log('videoAd onError', res)
+    //   that.setData({
+    //     video: false,
+    //   })
+    //
+    // })
+    // videoAd.onLoad(function(res) {
+    //   console.log('videoAd onLoad', res)
+    // })
+    // videoAd.onClose(function(res) {
+    //   console.log('videoAd onClose', res)
+    //   if (res && res.isEnded) {
+    //     wx.navigateTo({
+    //       url:'/pages/audio/audio'
+    //     })
+    //   } else {
+    //     wx.showModal({
+    //       title: '未看完视频(╥﹏╥)',
+    //       content: '看完视频才能进入天官预热阵地，看最新天官资讯',
+    //       showCancel:false,
+    //     })
+    //   }
+    //
+    // })
 
 
     var pass = wx.getStorageSync('pass')
@@ -29,6 +99,10 @@ Page({
         pass1: '已通过'
       })
     }
+
+
+
+
 
 
     if (!(app.globalData.userInfo==''||null)) {
