@@ -21,7 +21,8 @@
     "pages/luyu/xuexi",
     "pages/deskpaper/deskpaper",
     "pages/audio/audio",
-    "pages/zucheng/zucheng"
+    "pages/zucheng/zucheng",
+    "pages/year/year"
 
   ],
   "permission": {

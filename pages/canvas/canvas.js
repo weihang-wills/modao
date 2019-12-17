@@ -149,7 +149,9 @@ Page({
 
               context.drawImage(that.data.canvasimgbg, 0, 0, 320 / 2, 320 / 2)
               context.drawImage(that.data.canvasfront, 0, 165 / 2, 320 / 2, 155 / 2)
-              context.draw()
+              context.draw(false,function(e){
+                console.log('draw成功');
+              })
               wx.canvasToTempFilePath({
                 destWidth: 640,
                 destHeight: 640,

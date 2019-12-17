@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+
+  },
+  "navigationBarTitleText": "2020年会发生什么",
+  "navigationBarTextStyle":"white",
+  "backgroundColorTop":"#f39800",
+  "backgroundColorBottom":"#f39800",
+  "backgroundColor":"#f39800"
+}

@@ -143,88 +143,7 @@ Page({
       })
     }
 
-    // qq.getSetting({
-    //   success: res => {
-    //     if (!res.authSetting['scope.userLocation']) {
-    //       wx.authorize({
-    //         scope: 'scope.userLocation',
-    //         success() {
-    //           wx.getLocation({
-    //             success(res) {
-    //               console.log(1);
-    //               wx.request({
-    //                 url: 'https://restapi.amap.com/v3/geocode/regeo',
-    //                 data: {
-    //                   location: `${res.longitude},${res.latitude}`,
-    //                   key: '1da69716fa4b7094ee6aeaedbe4837cc',
-    //
-    //                 },
-    //
-    //
-    //                 success(res) {
-    //                   console.log(res);
-    //                   wx.request({
-    //
-    //                     url: 'https://restapi.amap.com/v3/weather/weatherInfo',
-    //                     data: {
-    //
-    //                       key: '1da69716fa4b7094ee6aeaedbe4837cc',
-    //                       city:res.data.regeocode.addressComponent.adcode
-    //
-    //                     },
-    //                     success(res){
-    //                       console.log(res);
-    //
-    //                     }
-    //
-    //                   })
-    //                 }
-    //               })
-    //             }
-    //           })
-    //
-    //
-    //         }
-    //       })
-    //     }else{
-    //       wx.getLocation({
-    //         success(res) {
-    //           console.log(2);
-    //           console.log(`${res.longitude},${res.latitude}`);
-    //           wx.request({
-    //             url: 'https://restapi.amap.com/v3/geocode/regeo',
-    //             data: {
-    //               location: `${res.longitude},${res.latitude}`,
-    //               key: '1da69716fa4b7094ee6aeaedbe4837cc',
-    //
-    //             },
-    //
-    //
-    //             success(res) {
-    //               console.log(res);
-    //               wx.request({
-    //
-    //                 url: 'https://restapi.amap.com/v3/weather/weatherInfo',
-    //                 data: {
-    //
-    //                   key: '1da69716fa4b7094ee6aeaedbe4837cc',
-    //                   city:[320500,610300]
-    //
-    //                 },
-    //                 success(res){
-    //                   console.log(res);
-    //
-    //                 }
-    //
-    //               })
-    //             }
-    //           })
-    //         }
-    //       })
-    //
-    //     }
-    //   }
-    // })
+
 
 
 
@@ -272,6 +191,19 @@ Page({
       console.log('进入头像页面');
       wx.navigateTo({
         url:'../../pages/canvas/canvas'
+      })
+
+    }
+
+  },
+
+  toyear(){
+
+    if(this.data.userInfo){
+      console.log(this.data.userInfo);
+      console.log('进入2020年页面');
+      wx.navigateTo({
+        url:'../../pages/year/year'
       })
 
     }

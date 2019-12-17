@@ -165,6 +165,13 @@
 					"pathName": "pages/zucheng/zucheng",
 					"query": "",
 					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "2020",
+					"pathName": "pages/year/year",
+					"query": "",
+					"scene": ""
 				}
 			]
 		}

@@ -1,0 +1,94 @@
+page {
+  background: url('https://ftp.bmp.ovh/imgs/2019/12/54e1a46d99b35c1e.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #f39800;
+}
+
+
+
+
+.container1,.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 340rpx 40rpx;
+  color: black;
+}
+
+.container2{
+  padding: 300rpx 120rpx;
+}
+
+.container2 .title{
+  font-size: 32rpx;
+  margin:20rpx 0rpx;
+  color: #a00f64;
+  font-weight: bolder;
+}
+
+.avatar{
+  width:90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.container2 .result{
+  font-size: 36rpx;
+  color: black;
+
+
+}
+.array{
+  width: 540rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20rpx 0rpx 20rpx 40rpx;
+}
+.tik{
+  width:47rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+
+
+
+.picker {
+  text-align: center;
+  font-size: 36rpx;
+  width: 60%;
+  border: solid 4rpx transparent;
+  border-bottom-color: black;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkresult {
+  width: 332rpx;
+  height: 89rpx;
+}
+
+.button1 {
+  width: 332rpx;
+  height: 89rpx;
+  padding: 0rpx;
+  border: none;
+  margin-top: 40rpx;
+}
+
+.holder {
+  text-align: center;
+  color: black;
+}
+.longbutton{
+  width: 288rpx;
+  height: 111rpx;
+  padding: 0;
+}

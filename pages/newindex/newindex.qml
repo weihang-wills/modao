@@ -33,9 +33,15 @@
 
     </view>
 
+    <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toyear'>
+      <image class='testcard1' src='../newindex/src/year.png' />
+    </button>
+
+
     <navigator url="/pages/zucheng/zucheng" hover-class="navigator-hover">
       <image class='testcard' src='../newindex/src/zuchengrukou.png' />
     </navigator>
+
 
     <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toavatar'>
       <image class='testcard1' src='../newindex/src/touxiangrukou.png' />
