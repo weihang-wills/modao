@@ -38,9 +38,7 @@
       <image class='testcard1' src='../newindex/src/year.png' />
     </button>
 
-    <view class='quiz1' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toyear'>
-      <image class='testcard1' src='../newindex/src/year.png' />
-    </view>
+
 
 
 
