@@ -42,6 +42,18 @@ page {
   padding: 0;
 }
 
+.quiz1 {
+  position: relative;
+  width: 500rpx;
+  height: 217rpx;
+  margin: 0rpx 0rpx 20rpx 0rpx;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  overflow: hidden;
+}
+
+
 .testcard1 {
 
   width: 632rpx;

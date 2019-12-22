@@ -2,6 +2,7 @@
 
 <view bindtap='video' class='tianguan'>
 <image src='http://img.pangweihang.cn/tianguan/poster1.png' class='tianguanimg'/>
+
 <text class='tianguantext'>天官预热阵地</text>
   </view>
 
@@ -36,6 +37,11 @@
     <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toyear'>
       <image class='testcard1' src='../newindex/src/year.png' />
     </button>
+
+    <view class='quiz1' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toyear'>
+      <image class='testcard1' src='../newindex/src/year.png' />
+    </view>
+
 
 
     <navigator url="/pages/zucheng/zucheng" hover-class="navigator-hover">
