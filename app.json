@@ -22,7 +22,8 @@
     "pages/deskpaper/deskpaper",
     "pages/audio/audio",
     "pages/zucheng/zucheng",
-    "pages/year/year"
+    "pages/year/year",
+    "pages/xinchun/xinchun"
 
   ],
   "permission": {

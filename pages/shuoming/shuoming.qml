@@ -11,6 +11,6 @@ src='http://img.pangweihang.cn/modao/shuoming1.png'></image>
 <view class='texts'>现在我们用的是QQ的吐个槽来收集反馈，QQ小程序在这方面还不是很完善，可以记住以下网址查看你们的反馈和我们的回复哦：
 https://support.qq.com/products/76779
 </view>
-<view class='texts'>
-觉得网址麻烦的可以关注微信公众号【心流站】，点击菜单的魔道论坛就可以看到你们的反馈哦~我们会经常回复哒~
-</view>
+
+<button class='button1' open-type='feedback'>
+  <text class='texts'>反馈通道>></text></button>

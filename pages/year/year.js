@@ -138,7 +138,7 @@ console.log('e',e);
         ctx.arc(x, y, r, 0, 2 * Math.PI)
         ctx.clip()
         ctx.drawImage(that.data.avartarlocal, x - r, y - r, 45 * 2, 45 * 2)
-        
+
         ctx.restore()
         ctx.setFontSize(32)
         ctx.fillText(that.data.name, 120 * 2, 185 * 2)
@@ -221,8 +221,9 @@ console.log('e',e);
 
     var that = this
     // 登录
-    qq.BaaS.auth.anonymousLogin().then(
+    qq.BaaS.auth.loginWithQQ().then(
       user => {
+        console.log('登录成功',user);
         let table = new wx.BaaS.TableObject('yearresult')
         let query = new wx.BaaS.Query()
         query.compare('name', '=', that.data.name)
@@ -235,6 +236,7 @@ console.log('e',e);
 
           table.setQuery(query).find().then(
             res => {
+              console.log('新增',res);
               console.log(res);
               if (res.data.objects.length == 0) {
                 that.compute();

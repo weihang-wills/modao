@@ -172,6 +172,13 @@
 					"pathName": "pages/year/year",
 					"query": "",
 					"scene": ""
+				},
+				{
+					"id": -1,
+					"name": "活动",
+					"pathName": "pages/xinchun/xinchun",
+					"query": "",
+					"scene": ""
 				}
 			]
 		}

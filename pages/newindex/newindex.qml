@@ -33,7 +33,10 @@
 
 
     </view>
-
+    <!-- 卡片开始 -->
+    <navigator url="/pages/xinchun/xinchun" hover-class="navigator-hover">
+      <image class='testcard' style='margin-top:0rpx;' src='../newindex/src/xinchun.png' />
+    </navigator>
     <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toyear'>
       <image class='testcard1' src='../newindex/src/year.png' />
     </button>

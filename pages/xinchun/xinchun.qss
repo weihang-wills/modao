@@ -1,0 +1,92 @@
+Page{
+
+  background: url('https://ftp.bmp.ovh/imgs/2019/12/1d9e14d7fefb5c5d.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #c93031;
+}
+
+
+.avatar{
+  width:120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border:none;
+  background: none;
+  padding: 0rpx;
+}
+
+.butt{
+  width:288rpx;
+  height: 111rpx;
+  padding: 0rpx;
+  border: none;
+  background: none;
+}
+.board{
+  width:90%;
+  background-color: #efc224;
+  border-radius: 10rpx;
+  padding: 20rpx;
+
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.icon{
+  width:57rpx;
+  height: 57rpx;
+}
+
+.row text{
+  color:white;
+  font-size: 32rpx;
+}
+
+.column text{
+  color:white;
+  font-size:24rpx;
+  max-width: 120rpx;
+  overflow: hidden;
+}
+
+.picker {
+  text-align: center;
+  font-size: 32rpx;
+  width: 60%;
+  border: solid 6rpx transparent;
+  border-bottom-color: #f09431;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+.prize{
+  width:357rpx;
+  height: 520rpx;
+}
+
+.toprow{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top:60rpx;
+
+
+}
+
+.prizetitle{
+  width:213rpx;
+  height: 62rpx;
+  margin:20rpx;
+}
