@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    background: 'http://img.pangweihang.cn/modao/baoxiaobackground.png',
+    background: 'http://pangweihang.cn/modao/modao/baoxiaobackground.png',
     home: false,
     userInfo: {},
     hasUserInfo: false,

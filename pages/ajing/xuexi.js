@@ -3,7 +3,7 @@ const app = getApp()
 Page({
 
   data: {
-    background: 'http://img.pangweihang.cn/modao/ajingmogai.png',
+    background: 'http://pangweihang.cn/modao/modao/ajingmogai.png',
     selected: true,
 
     main: {
@@ -29,19 +29,19 @@ Page({
     selections: [
 
       {
-        background: 'http://img.pangweihang.cn/modao/ajingfail.png',
+        background: 'http://pangweihang.cn/modao/modao/ajingfail.png',
         title: '晓星尘听见阿菁被抓呼救，但觉得这女小偷装作瞎子偷窃多次，被人抓到是罪有应得，希望她能得到教训之后知错能改。于是转身离去。\r\n最终阿菁被地主手下殴打而死。',
         over: true,
         buttonword: '退出游戏'
       },
       {
-        background: 'http://img.pangweihang.cn/modao/ajingfail.png',
+        background: 'http://pangweihang.cn/modao/modao/ajingfail.png',
         title: '晓星尘听闻阿菁被众人抓住并欲为难她，于是在暗处用石头击退了那群大汉，阿菁挣脱逃跑。晓星尘见这小姑娘已经逃走，希望她能记住教训，于是便离开了。\r\n然而没过多久阿菁在街上还是被地主和那群手下抓住，毒打致死。',
         over: true,
         buttonword: '退出游戏'
       },
       {
-        background: 'http://img.pangweihang.cn/modao/ajingsuccess.png',
+        background: 'http://pangweihang.cn/modao/modao/ajingsuccess.png',
         title: "晓星尘直接现身相救，打退了一众恶徒，说“这么多人欺负一个女孩子，实在不耻”。\r\n阿菁认出了这位救他的恩人，便时不时地跟在他身后，并最终和他一起启程前往义城。",
         over: false,
         buttonword: '继续下一章',

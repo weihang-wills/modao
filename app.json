@@ -23,7 +23,8 @@
     "pages/audio/audio",
     "pages/zucheng/zucheng",
     "pages/year/year",
-    "pages/xinchun/xinchun"
+    "pages/xinchun/xinchun",
+    "pages/quiz2/quiz"
 
   ],
   "permission": {

@@ -21,8 +21,10 @@ page{
 }
 
 .texts{
-
+  width: 100%;
   margin: 40rpx 60rpx;
   font-size: 28rpx;
   color:white;
+  background-color: #091423;
+  padding: 20rpx;
 }

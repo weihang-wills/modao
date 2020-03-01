@@ -3,7 +3,7 @@ const app = getApp()
 Page({
 
   data: {
-    background: 'http://img.pangweihang.cn/modao/luyumogai.png',
+    background: 'http://pangweihang.cn/modao/modao/luyumogai.png',
     selected: true,
 
     main: {
@@ -29,19 +29,19 @@ Page({
     selections: [
 
       {
-        background: 'http://img.pangweihang.cn/modao/luyusuccess.png',
+        background: 'http://pangweihang.cn/modao/modao/luyusuccess.png',
         title: '晓星尘听罢，嘴角一笑“是我多心了，我们继续走吧”。道长和阿菁继续往前走，旁边重伤的薛洋因无人救治最终伤重而亡。\r\n而后不久宋岚也找到了义城，和星尘谈起往事，而薛洋一直了无踪影，据说是被金家截杀了。道长依然明月清风，在义城除暴安良，而宋岚、阿菁也每每相助，成“义城三杰”。',
         over: false,
         buttonword: '继续下一章'
       },
       {
-        background: 'http://img.pangweihang.cn/modao/luyusuccess.png',
+        background: 'http://pangweihang.cn/modao/modao/luyusuccess.png',
         title: '晓星尘走过去发现此人伤势很重，再顺势捡起旁边的剑，手沿着剑柄刻字摸去，竟发现是“降灾”，原来他竟是自己苦苦追查的薛洋？！\r\n而后立刻把他抬回义城，封住了他经脉并为他救治。等薛洋度过了生命危险，就发信号让金家通知仙督将他押回审判。 \r\n薛洋回到金家手里自然难逃一死，但义城最终得以清平，晓星尘和阿菁在义城居住下来为义城百姓除暴安良，后宋岚寻至义城得以和晓星尘团聚。',
         over: false,
         buttonword: '继续下一章'
       },
       {
-        background: 'http://img.pangweihang.cn/modao/xueyangresult.png',
+        background: 'http://pangweihang.cn/modao/modao/xueyangresult.png',
         title: "晓星尘查看了下重伤的薛洋，在不知情下把他抬回义城救治。醒来的薛洋认出了晓星尘。\r\n薛洋伤好了之后，设计骗晓星尘杀害义城无辜百姓，并阴谋让晓星尘杀死了自己挚友宋岚，最终逼得晓星尘自尽。\r\n此后，薛洋想要挽回其魂魄将其复活而不得。",
         over: true,
         buttonword: '退出游戏',

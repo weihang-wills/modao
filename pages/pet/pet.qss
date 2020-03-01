@@ -1,6 +1,6 @@
 
 page{
-  background: url('http://img.pangweihang.cn/petback.png');
+  background: url('http://pangweihang.cn/modao/modao/petback.png');
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 1080rpx;

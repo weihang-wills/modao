@@ -21,7 +21,7 @@ zhang='{{item}}'/> -->
 
 <zhujian bindtap='nav' data-index='5'  data-url='../../pages/luyu/xuexi' zhang='{{zhangs[5]}}' />
 
-<text class='texts'>温馨提示：有的章节选择和之前章节的选择有关哦，如果遇到都是错误选择，可能是你之前的选择出错了呢…加油！</text>
+<text class='texts'>温馨提示：有的章节选择和之前章节的选择有关哦，如果某一章遇到都是错误选择，请回到之前的章节重新选择最佳的答案哦，因为会同时有多个正确答案哦…加油！</text>
 
 
 </view>

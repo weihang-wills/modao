@@ -1,5 +1,5 @@
 <view style='height:300rpx' />
-<view class='row' style='font-size: 28rpx;color:#efc224;'>我的战队</view>
+<view class='row' style='font-size: 28rpx;color:#ffffff;'>我的战队</view>
 
 
 
@@ -13,11 +13,15 @@
     </view>
     <view class='row' style='margin:20rpx;'>
       <image src='../../utils/yuanqi.png' class='icon' />
-      <text style='margin-left:20rpx;'>{{teamzans}}元气</text>
+      <text style='margin-left:20rpx;'>{{newzans}}元气</text>
     </view>
   </view>
   <!-- 队员列表 -->
+  <view class='column'>
+<view style='color:white;text-align:center;font-size:28rpx;'>（可以点击队员列表中的头像联系Ta哦）</view>
+  </view>
   <view class='row'>
+
     <view wx:for='{{teammember}}' wx:key='index'>
 
       <view class='column'>
@@ -29,6 +33,7 @@
 
     </view>
   </view>
+
 
   <!-- 按钮 -->
   <view style='position:fixed;bottom:20rpx;'>
@@ -65,7 +70,7 @@
 <!-- 规则模块 -->
 
 <view class='toprow'>
-  <image style='width:50%;margin-left:10rpx;' src='https://ftp.bmp.ovh/imgs/2019/12/68b725f3e4a6d48a.png' class='prize' />
+  <image style='width:50%;margin-left:10rpx;' src='https://pangweihang.cn/modao/modao/prize.png' class='prize' />
   <text style='width:50%;font-size:28rpx;color:white;margin-left:20rpx;margin-top:20rpx;'>活动规则\r\n{{rules}}</text>
 </view>
 <!-- 中奖名单 -->

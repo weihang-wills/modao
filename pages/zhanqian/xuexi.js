@@ -3,7 +3,7 @@ const app = getApp()
 Page({
 
   data: {
-    background: 'http://img.pangweihang.cn/modao/zhanqian.png',
+    background: 'http://pangweihang.cn/modao/modao/zhanqian.png',
     selected: true,
 
     main: {
@@ -29,19 +29,19 @@ Page({
     selections: [
 
       {
-        background: 'http://img.pangweihang.cn/modao/jiaochuwenshi.png',
+        background: 'http://pangweihang.cn/modao/modao/jiaochuwenshi.png',
         title: '魏无羡忍痛交出温氏，温氏余人被金家枭首示众，事情暂时平息。\n\r然而金家根本不会善罢甘休，温氏余孽只是一个出师之名的借口，这次的借口被堵住了，金家依然策划嫁祸了凶尸杀人嫁祸于魏无羡，声讨之势众，金家终于决定在不夜天城举行誓师大会。',
         over: false,
         buttonword: '继续下一章'
       },
       {
-        background: 'http://img.pangweihang.cn/modao/luanzang.png',
+        background: 'http://pangweihang.cn/modao/modao/luanzang.png',
         title: '魏无羡决心守护温氏，并表示友好退守乱葬岗，井水不犯河水。江澄替无羡说情，指温氏余人都是老弱妇孺，并无危害，安抚各世家。\n\r然而金氏并不买账，依靠自身威望怂恿各世家，以鬼道非正道，为民除害之名举行誓师大会',
         over: false,
         buttonword: '继续下一章'
       },
       {
-        background: 'http://img.pangweihang.cn/modao/jiaochuwenshi.png',
+        background: 'http://pangweihang.cn/modao/modao/jiaochuwenshi.png',
         title: "魏无羡决心守护温氏，直接冲上金麟台对峙，直言自己并未驱动凶尸残害无辜，是金家嫁祸，说罢直接驱动鬼气攻击金光善。此时座中一客卿突然发出几道符咒破解了鬼气。\n\r“原来，这就是金宗主的好帮手啊，他也会鬼道，怎么就不说是他驱动的凶尸杀人呢？”说罢，魏无羡轻蔑一笑离开金麟台。\n\r金光善以魏无羡轻狂自大袭击金麟台唯有，以为民除害，匡扶正道为名举办誓师大会。",
         over: false,
         buttonword: '继续下一章',

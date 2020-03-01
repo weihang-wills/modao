@@ -151,22 +151,24 @@ Page({
               context.drawImage(that.data.canvasfront, 0, 165 / 2, 320 / 2, 155 / 2)
               context.draw(false,function(e){
                 console.log('draw成功');
-              })
-              wx.canvasToTempFilePath({
-                destWidth: 640,
-                destHeight: 640,
-                canvasId: 'firstCanvas',
-                success(res) {
-                  console.log(res.tempFilePath);
-                  that.setData({
+                wx.canvasToTempFilePath({
+                  destWidth: 640,
+                  destHeight: 640,
+                  canvasId: 'firstCanvas',
+                  success(res) {
+                    console.log(res.tempFilePath);
+                    that.setData({
 
-                    qqavatar: res.tempFilePath
+                      qqavatar: res.tempFilePath
 
-                  })
-
+                    })
 
 
-                }
+
+                  }
+                })
+
+
               })
 
             }

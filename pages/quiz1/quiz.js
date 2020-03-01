@@ -6,7 +6,7 @@ Page({
   data: {
     home:false,
     ad: false,
-    background: 'http://img.pangweihang.cn/modao/fujiatiback.png',
+    background: 'http://pangweihang.cn/modao/modao/fujiatiback.png',
     userInfo: {},
     hasUserInfo: false,
     canIUse: qq.canIUse('button.open-type.getUserInfo'),

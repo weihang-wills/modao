@@ -15,7 +15,7 @@ Page({
     teamname: '',
     teammember: [],
     teammemberdetail: [],
-    teamzans: 0,
+    newzans: 0,
 
 
     // 获奖名单
@@ -35,9 +35,9 @@ Page({
     }
     var that = this
     return {
-      title: '加入我的战队，一起领取魔道新春红包吧',
+      title: '加入我的战队，一起为云梦加油吧',
       path: `/pages/xinchun/xinchun?teamid=${that.data.teamid}`,
-      imageUrl: 'http://img.pangweihang.cn/modao/xinchunshare.png',
+
 
     }
   },
@@ -57,7 +57,7 @@ Page({
             teamid: i.id,
             teamname: i.teamname,
             teammember: i.teammemberdetail,
-            teamzans: i.teamzans,
+            newzans: i.newzans,
           })
         }
       })
@@ -110,7 +110,7 @@ Page({
               teamid: i.id,
               teamname: i.teamname,
               teammember: i.teammemberdetail,
-              teamzans: i.teamzans,
+              newzans: i.newzans,
             })
             console.log('已经设置了数据', that.data.teammember);
           }
@@ -148,18 +148,39 @@ Page({
         })
 
 
+        wx.getSetting({
+          success(res) {
+            if (res.authSetting['setting.addFriend']) {
+              qq.authorize({
+                scope: 'setting.addFriend',
+                success() {
+                  // 用户已经同意小程序使用加好友功能
+                  that.setData({
+                    canaddfriend: true,
+                  })
+                  that.joindata();
+                }
+              })
 
 
-        qq.authorize({
-          scope: 'setting.addFriend',
-          success() {
-            // 用户已经同意小程序使用加好友功能
-            that.setData({
-              canaddfriend: true,
-            })
-            that.joindata();
+
+
+
+            } else {
+
+              wx.showModal({
+                title: '请先开启授权',
+                content: '请点击[右上角]-[关于]-[右上角]-[设置]，开启授权后即可'
+              })
+
+
+
+
+
+            }
           }
         })
+
 
 
 
@@ -211,31 +232,59 @@ Page({
                 userInfo: userInfo,
               })
 
-              qq.authorize({
-                scope: 'setting.addFriend',
-                success() {
-                  // 用户已经同意小程序使用加好友功能
-                  that.setData({
-                    canaddfriend: true,
-                  })
+              wx.getSetting({
 
-                  let data = {
-                    teamname: that.data.createteamname,
-                    teammember: [that.data.userInfo.openid, ],
-                    teammemberdetail: [that.data.userInfo, ],
-                    teamzans: 0,
-                  }
-                  table.create().set(data).save().then(res => {
-                    console.log('建立队伍成功');
-                    wx.showToast({
-                      title: '创建队伍成功'
+                success(res) {
+                  console.log('getSetting', res);
+                  if (res.authSetting['setting.addFriend']) {
+
+                    qq.authorize({
+                      scope: 'setting.addFriend',
+                      success() {
+                        // 用户已经同意小程序使用加好友功能
+                        that.setData({
+                          canaddfriend: true,
+                        })
+
+                        let data = {
+                          teamname: that.data.createteamname,
+                          teammember: [that.data.userInfo.openid, ],
+                          teammemberdetail: [that.data.userInfo, ],
+                          newzans: 0,
+                        }
+                        table.create().set(data).save().then(res => {
+                          console.log('建立队伍成功');
+                          wx.showToast({
+                            title: '创建队伍成功'
+                          })
+                          that.renew();
+
+                        })
+
+                      }
+
                     })
-                    that.renew();
 
-                  })
 
+
+                  } else {
+
+                    wx.showModal({
+                      title: '请先开启授权',
+                      content: '请点击[右上角]-[关于]-[右上角]-[设置]，开启授权后即可'
+                    })
+
+
+
+
+
+
+
+                  }
                 }
               })
+
+
             } else {
               wx.showToast({
                 title: '创建队伍失败，请重试'
@@ -305,13 +354,13 @@ Page({
 
         console.log('teamid一致');
 
-        table.getWithoutData(that.data.myteamid).incrementBy('teamzans', 1).update().then(res => {
+        table.getWithoutData(that.data.myteamid).incrementBy('newzans', 1).update().then(res => {
           console.log('打气成功', res);
           wx.showToast({
             title: '打气成功',
           })
           that.setData({
-            teamzans: res.data.teamzans,
+            newzans: res.data.newzans,
           })
 
           wx.setStorageSync('xinchunjiayou', today)
@@ -376,7 +425,7 @@ Page({
                   teamid: i.id,
                   teamname: i.teamname,
                   teammember: i.teammemberdetail,
-                  teamzans: i.teamzans,
+                  newzans: i.newzans,
                   myteamid: i.id,
                   hasteam: true,
 

@@ -3,7 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    background:'http://img.pangweihang.cn/namebackground1.png',
+    background:'http://pangweihang.cn/modao/modao/namebackground1.png',
     home:false,
     userInfo: {},
     hasUserInfo: false,

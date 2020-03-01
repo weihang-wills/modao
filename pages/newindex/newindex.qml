@@ -1,39 +1,57 @@
-
-
 <view bindtap='video' class='tianguan'>
-<image src='http://img.pangweihang.cn/tianguan/poster1.png' class='tianguanimg'/>
+  <image src='http://pangweihang.cn/modao/tianguan/poster1.png' class='tianguanimg' />
 
-<text class='tianguantext'>天官预热阵地</text>
-  </view>
+  <text class='tianguantext'>天官预热阵地</text>
+</view>
 
 
 <view style="background:url('{{background}}');background-size: 100%;background-repeat: no-repeat;">
   <view class='container1'>
     <view class='row'>
-      <navigator url="/pages/lianhuawu/lianhuawu?back=yicheng" hover-class="navigator-hover">
+      <view bindtap='topyq' data-url="/pages/lianhuawu/lianhuawu?back=wanshenku" hover-class="navigator-hover">
+        <image class='placecard' src='../newindex/src/wanshenku.png' />
+      </view>
+      <view bindtap='topyq' data-url="/pages/lianhuawu/lianhuawu?back=yicheng" hover-class="navigator-hover">
         <image class='placecard' src='../newindex/src/yicheng.png' />
-      </navigator>
+      </view>
 
-  <navigator url="/pages/lianhuawu/lianhuawu?back=jinlintai" hover-class="navigator-hover">
-        <image class='placecard'  src='../newindex/src/jinlintai.png' />
-    </navigator>
+      <view bindtap='topyq' data-url="/pages/lianhuawu/lianhuawu?back=jinlintai" hover-class="navigator-hover">
+        <image class='placecard' src='../newindex/src/jinlintai.png' />
+      </view>
 
-    <navigator url="/pages/lianhuawu/lianhuawu?back=bujingshi" hover-class="navigator-hover">
-          <image class='placecard'  src='../newindex/src/bujingshi.png' />
-      </navigator>
+      <view bindtap='topyq' data-url="/pages/lianhuawu/lianhuawu?back=bujingshi" hover-class="navigator-hover">
+        <image class='placecard' src='../newindex/src/bujingshi.png' />
+      </view>
 
-      <navigator url="/pages/lianhuawu/lianhuawu?back=lianhuawu" hover-class="navigator-hover">
+      <view bindtap='topyq' data-url="/pages/lianhuawu/lianhuawu?back=lianhuawu" hover-class="navigator-hover">
         <image class='placecard' src='../newindex/src/lianhua.png' />
-      </navigator>
+      </view>
 
 
-      <navigator  url="/pages/lianhuawu/lianhuawu?back=gusu" hover-class="navigator-hover">
+      <view bindtap='topyq' data-url="/pages/lianhuawu/lianhuawu?back=gusu" hover-class="navigator-hover">
         <image style='margin-right:20rpx;' class='placecard' src='../newindex/src/yun.png' />
-      </navigator>
-
-
+      </view>
     </view>
+
+
     <!-- 卡片开始 -->
+    <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toquiz' data-url='quiz2'>
+      <image class='testcard1' src='../newindex/src/fujiaquiz.png' />
+      <view class="incard">
+
+        <view class='littlerow'>
+
+          <image style='width:50rpx;height:50rpx;border-radius:50%' src='{{userInfo.avatarUrl}}' />
+          <text style='margin-left:20rpx;max-width:200rpx;overflow:hidden;color:white;'>{{userInfo.nickName}}</text>
+          <text style='margin-left:10rpx;color:#ffcd76;'>{{pass2}}</text>
+        </view>
+
+
+
+
+      </view>
+
+    </button>
     <navigator url="/pages/xinchun/xinchun" hover-class="navigator-hover">
       <image class='testcard' style='margin-top:0rpx;' src='../newindex/src/xinchun.png' />
     </navigator>
@@ -61,7 +79,7 @@
       <image class='testcard' style='margin-top:0rpx;' src='../newindex/src/jianwenlu.png' />
     </navigator>
 
-    <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toquiz'>
+    <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toquiz' data-url='quiz'>
       <image class='testcard1' src='../newindex/src/quiz.png' />
       <view class="incard">
 
@@ -79,7 +97,7 @@
 
     </button>
 
-    <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toquiz1'>
+    <button class='quiz' open-type='getUserInfo' bindgetuserinfo='getUserInfo' bindtap='toquiz' data-url='quiz1'>
       <image class='testcard1' src='../newindex/src/fujiaquiz.png' />
       <view class="incard">
 
@@ -135,9 +153,9 @@
 </view>
 
 <view wx:if='{{ad}}' class='adbottom'>
-    <view style='text-align:center;margin-bottom:10rpx'>点击广告查看结果</view>
-    <view capture-bind:tap='ad' >
-<ad unit-id="2d8a13465bb0b9f4d56d9ddc8083ca96" type="card"></ad>
-</view>
-
+  <view style='text-align:center;margin-bottom:10rpx'>点击广告查看结果</view>
+  <view capture-bind:tap='ad'>
+    <ad unit-id="2d8a13465bb0b9f4d56d9ddc8083ca96" type="card"></ad>
   </view>
+
+</view>

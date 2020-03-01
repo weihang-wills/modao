@@ -1,7 +1,7 @@
 
 
 page{
-  /* background: url('http://img.pangweihang.cn/modao/geren.png'); */
+  /* background: url('http://pangweihang.cn/modao/modao/geren.png'); */
   /* background-position: bottom; */
   background-repeat: no-repeat;
   background-size: 100%;

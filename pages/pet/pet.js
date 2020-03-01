@@ -11,7 +11,7 @@ Page({
 
     characters: {
       wuxian: {
-        pic: 'http://img.pangweihang.cn/modao/sansuixian.png',
+        pic: 'http://pangweihang.cn/modao/modao/sansuixian.png',
         title: '三岁羡',
         life: 0,
         level1: 100,
@@ -22,7 +22,7 @@ Page({
       },
 
       wangji: {
-        pic: 'http://img.pangweihang.cn/modao/sansuiji.png',
+        pic: 'http://pangweihang.cn/modao/modao/sansuiji.png',
         title: '三岁机',
         life: 0,
         level1: 100,
@@ -189,7 +189,7 @@ Page({
           'characters.wuxian.percent': (wuxian.life - wuxian.level1) / (wuxian.level2 - wuxian.level1) * 100,
           'characters.wuxian.totallife': (wuxian.level2 - wuxian.level1),
           'characters.wuxian.title': '少年羡',
-          'characters.wuxian.pic': 'http://img.pangweihang.cn/modao/shaonianxian.png',
+          'characters.wuxian.pic': 'http://pangweihang.cn/modao/modao/shaonianxian.png',
 
 
 
@@ -202,7 +202,7 @@ Page({
           'characters.wuxian.percent': (wuxian.life - wuxian.level2) / (wuxian.level3 - wuxian.level2) * 100,
           'characters.wuxian.totallife': (wuxian.level3 - wuxian.level2),
           'characters.wuxian.title': '老祖羡',
-          'characters.wuxian.pic': 'http://img.pangweihang.cn/modao/laozuxian.png',
+          'characters.wuxian.pic': 'http://pangweihang.cn/modao/modao/laozuxian.png',
 
 
         })
@@ -230,7 +230,7 @@ Page({
           'characters.wangji.percent': (wangji.life - wangji.level1) / (wangji.level2 - wangji.level1) * 100,
           'characters.wangji.totallife': (wangji.level2 - wangji.level1),
           'characters.wangji.title': '少年机',
-          'characters.wangji.pic': 'http://img.pangweihang.cn/modao/shaonianji.png',
+          'characters.wangji.pic': 'http://pangweihang.cn/modao/modao/shaonianji.png',
 
 
         })
@@ -242,7 +242,7 @@ Page({
           'characters.wangji.percent': (wangji.life - wangji.level2) / (wangji.level3 - wangji.level2) * 100,
           'characters.wangji.totallife': (wangji.level3 - wangji.level2),
           'characters.wangji.title': '含光君',
-          'characters.wangji.pic': 'http://img.pangweihang.cn/modao/hanguangjun.png',
+          'characters.wangji.pic': 'http://pangweihang.cn/modao/modao/hanguangjun.png',
 
 
         })

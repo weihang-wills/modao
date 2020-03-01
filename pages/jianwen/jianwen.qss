@@ -1,5 +1,5 @@
 Page {
-  background: url('http://img.pangweihang.cn/modao/jianwenback.png');
+  background: url('http://pangweihang.cn/modao/modao/jianwenback.png');
   background-size: 100%;
 }
 

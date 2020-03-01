@@ -1,21 +1,21 @@
 const app = getApp()
-var videoAd=null;
+var videoAd = null;
 
 Page({
   data: {
-    ad:false,
-    video:false,
+    ad: false,
+    video: false,
     pass: '未通过',
-    pass1:'未通过',
+    pass1: '未通过',
     logs: [],
-    background: 'http://img.pangweihang.cn/backgroundindex.png',
+    background: 'http://pangweihang.cn/modao/modao/backgroundindex.png',
     userInfo: '',
     hasUserInfo: false,
     canIUse: qq.canIUse('button.open-type.getUserInfo'),
   },
 
-  video(){
-    if(this.data.video){
+  video() {
+    if (this.data.video) {
 
       videoAd.load().then(() => {
         console.log('激励视频加载成功');
@@ -29,10 +29,11 @@ Page({
         console.log('激励视频加载失败');
       })
 
-    }else{
+    } else {
 
       this.setData({
-        ad:true,
+        ad: true,
+        url: '/pages/audio/audio'
       })
 
 
@@ -43,18 +44,31 @@ Page({
     this.setData({
       ad: false,
 
+
     })
     wx.navigateTo({
-      url:'/pages/audio/audio'
+      url: this.data.url
     })
+
+  },
+
+  topyq(e) {
+    console.log('朋友圈点击e', e);
+
+    this.setData({
+      ad: true,
+      url: e.currentTarget.dataset.url || e.target.dataset.url
+    })
+
+
 
   },
 
   onLoad: function() {
 
-    console.log('canIuser',this.data.canIUse);
+    console.log('canIuser', this.data.canIUse);
 
-// video part
+    // video part
     // videoAd = qq.createRewardedVideoAd({
     //   adUnitId: '89090865fe14a8631a25252f23b58517',
     // })
@@ -86,26 +100,21 @@ Page({
     // })
 
 
-    var pass = wx.getStorageSync('pass')
-    if (pass) {
-      this.setData({
-        pass: '已通过'
-      })
+    var change = {
+      pass: wx.getStorageSync('pass') ? '已通过' : '未通过',
+      pass1: wx.getStorageSync('pass1') ? '已通过' : '未通过',
+      pass2: wx.getStorageSync('pass2') ? '已通过' : '未通过',
+
     }
-
-    var pass1 = wx.getStorageSync('pass1')
-    if (pass1) {
-      this.setData({
-        pass1: '已通过'
-      })
-    }
+    this.setData(change)
 
 
 
 
 
 
-    if (!(app.globalData.userInfo==''||null)) {
+
+    if (!(app.globalData.userInfo == '' || null)) {
 
       console.log(1);
       console.log(app.globalData.userInfo);
@@ -184,26 +193,26 @@ Page({
 
   },
 
-  toavatar(){
+  toavatar() {
 
-    if(this.data.userInfo){
+    if (this.data.userInfo) {
       console.log(this.data.userInfo);
       console.log('进入头像页面');
       wx.navigateTo({
-        url:'../../pages/canvas/canvas'
+        url: '../../pages/canvas/canvas'
       })
 
     }
 
   },
 
-  toyear(){
+  toyear() {
 
-    if(this.data.userInfo){
+    if (this.data.userInfo) {
       console.log(this.data.userInfo);
       console.log('进入2020年页面');
       wx.navigateTo({
-        url:'../../pages/year/year'
+        url: '../../pages/year/year'
       })
 
     }
@@ -222,7 +231,7 @@ Page({
     }
   },
 
-  toquiz() {
+  toquiz(e) {
 
     if (this.data.userInfo) {
 
@@ -234,21 +243,21 @@ Page({
 
 
 
-
+      console.log('toquize', e);
       console.log('进入quiz');
 
 
 
-      var quiz = wx.getStorageSync('quiz')
+      var quiz = wx.getStorageSync(e.currentTarget.dataset.url)
       if (quiz) {
         wx.navigateTo({
-          url: '../../pages/quiz/quiz?quiz=' + quiz,
+          url: `../../pages/${e.currentTarget.dataset.url}/quiz?quiz=${quiz}`,
 
         })
       } else {
 
         wx.navigateTo({
-          url: '../../pages/quiz/quiz',
+          url:`../../pages/${e.currentTarget.dataset.url}/quiz`,
 
         })
 
@@ -291,6 +300,46 @@ Page({
 
         wx.navigateTo({
           url: '../../pages/quiz1/quiz',
+
+        })
+
+      }
+
+    }
+
+
+
+
+
+
+  },
+  toquiz2() {
+
+    if (this.data.userInfo) {
+
+      console.log(this.data.userInfo);
+
+
+
+
+
+
+
+
+      console.log('进入quiz2');
+
+
+
+      var quiz2 = wx.getStorageSync('quiz2')
+      if (quiz2) {
+        wx.navigateTo({
+          url: '../../pages/quiz2/quiz?quiz=' + quiz2,
+
+        })
+      } else {
+
+        wx.navigateTo({
+          url: '../../pages/quiz2/quiz',
 
         })
 

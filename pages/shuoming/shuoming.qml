@@ -2,7 +2,7 @@
 <image
 class='background'
 mode='widthFix'
-src='http://img.pangweihang.cn/modao/shuoming1.png'></image>
+src='http://pangweihang.cn/modao/modao/shuoming1.png'></image>
 <image class='title' mode='aspectFit' src='../../utils/1.png' />
 <view class='texts'>神秘道友O(∩_∩)O哈哈~</view>
 <image class='title' mode='aspectFit' src='../../utils/2.png' />

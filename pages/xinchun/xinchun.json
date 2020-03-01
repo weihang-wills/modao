@@ -3,11 +3,11 @@
   "usingComponents": {
 
   },
-  "navigationBarBackgroundColor": "#c93031",
+
   "navigationBarTitleText": "组队活动",
   "navigationBarTextStyle": "white",
-  "backgroundColorTop": "#c93031",
-  "backgroundColorBottom": "#c93031",
-  "backgroundColor": "#c93031"
+  "backgroundColorTop": "#adb96e",
+  "backgroundColorBottom": "#adb96e",
+  "backgroundColor": "#adb96e"
 
 }

@@ -31,10 +31,10 @@
 
     <swiper-item>
       <view class='contain'>
-<image src='http://pangweihang.cn/modao/modao/fujiati.png' class='medal'/>
+<image src='http://pangweihang.cn/modao/modao/quiz2medal.png' class='medal'/>
 <image src='{{userInfo.avatarUrl}}' class='avatar'/>
 <text style='margin-top:20rpx;margin-bottom:20rpx;'>{{userInfo.nickName}}</text>
-<text>人不轻狂枉少年，希望你依如少年！</text>
+<text>愿你天官赐福，百无禁忌！</text>
 
         </view>
     </swiper-item>
@@ -42,7 +42,7 @@
 
   </swiper>
 
-  <button wx:if='{{current==14}}'class='iconbutton'
+  <button wx:if='{{current==16}}'class='iconbutton'
   open-type='share'
   share-type="{{59}}"
   style='margin-top:40rpx;'
@@ -52,6 +52,7 @@
 
 
   </view>
+
   <view wx:if='{{ad}}' class='ad'>
       <view style='text-align:center;margin-bottom:10rpx'>点击广告可以再次获得答题机会</view>
       <view capture-bind:tap='ad' >

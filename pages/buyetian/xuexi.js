@@ -3,7 +3,7 @@ const app = getApp()
 Page({
 
   data: {
-    background: 'http://img.pangweihang.cn/modao/buyetian.png',
+    background: 'http://pangweihang.cn/modao/modao/buyetian.png',
     selected: true,
 
     main: {
@@ -29,19 +29,19 @@ Page({
     selections: [
 
       {
-        background: 'http://img.pangweihang.cn/modao/shijiesi.png',
+        background: 'http://pangweihang.cn/modao/modao/shijiesi.png',
         title: '听了忘机的话，停下了吹笛。此时才发现场下的部分凶尸依然没有停下，是受他人所控。事情仍然不可控制，魏无羡赶紧吹奏召尸和其他凶尸对搏，受招阴阵影响无羡依旧难以控制心绪，险些暴走。\r\n此时师姐走进战场，阿羡听闻师姐叫声慌忙进入战场，最终师姐为阿羡挡剑而死，魏无羡怒气攻心暴走失控，屠杀上千修士，给金家落下了围剿乱葬岗的口实',
         over: true,
         buttonword: '退出游戏'
       },
       {
-        background: 'http://img.pangweihang.cn/modao/buyetian.png',
+        background: 'http://pangweihang.cn/modao/modao/buyetian.png',
         title: '此时战场中传来了师姐的叫声，魏无羡心中一惊怕师姐受伤，立刻召唤温宁在人群中迅速找到了师姐，并把她带离战场。尽管魏无羡停止了吹笛，但凶尸仍然暴走。\r\n于是无羡继续吹笛控制走尸和其他凶尸对抗，受招阴阵影响，无羡渐渐失控，屠杀修士百余人，给金家落下了围剿乱葬岗的口实。',
         over: true,
         buttonword: '退出游戏'
       },
       {
-        background: 'http://img.pangweihang.cn/modao/buyetian.png',
+        background: 'http://pangweihang.cn/modao/modao/buyetian.png',
         title: "魏无羡想起当时金麟台座中习鬼道的客卿，突然意识到此时不夜天城被布下一个巨大的招阴阵，此阵吸纳怨气，容易导致自己对阴虎符失控。便立刻画出符咒破坏了招阴阵，并驱使鬼气压制住了金家众人，其他世家也暂时不敢轻举妄动。\r\n魏无羡说：“我现在捏死你们，就如同捏死蝼蚁那么简单，别不自量力了！我还需要用千疮百孔这种雕虫小技？刚才的招阴阵就是金家的客卿布下，大家好好看看，到底是我不仁，还是金家不义！”说罢，径直离开了不夜天城。",
         over: false,
         buttonword: '继续下一章',

@@ -1,5 +1,5 @@
 page{
-  background: url('http://img.pangweihang.cn/modao/touxiang_back.png');
+  background: url('http://pangweihang.cn/modao/modao/touxiang_back.png');
   background-size: 100%;
 }
 

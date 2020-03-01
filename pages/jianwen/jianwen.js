@@ -212,6 +212,7 @@ Page({
       (function(u) {
         console.log(u);
         var num = weathers[u].num
+
         var wea = "weathers[" + u + "].weather"
         var tem = "weathers[" + u + "].temp"
 
@@ -226,11 +227,13 @@ Page({
           },
           success(res) {
             console.log(res);
+            var changed={}
+            // 创造一个对象，然后往对象里面填充元素，然后this.setdata(该对象)
+            changed[wea]=res.data.lives[0].weather
+            changed[tem]=res.data.lives[0].temperature
+            console.log('changed',changed);
 
-            that.setData({
-                [wea]: res.data.lives[0].weather,
-                [tem]: res.data.lives[0].temperature
-              },
+            that.setData(changed,
               function() {
                 console.log(that.data.weathers);
               }

@@ -1,0 +1,92 @@
+page{
+  background-color: #ffffff;
+}
+
+swiper {
+
+  width: 750rpx;
+  height: 600rpx;
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+
+}
+
+.contain{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.avatar{
+  margin-top:40rpx;
+  width:80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+
+}
+
+.medal{
+  width:327rpx;
+  height: 317rpx;
+
+}
+
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back{
+  position: absolute;
+  z-index: -1;
+  width:100%;
+  height: auto;
+
+}
+.title{
+  text-align: center;
+}
+.picker {
+  width: 60%;
+  border: solid 4rpx transparent;
+  border-bottom-color: white;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40rpx;
+
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200rpx 0rpx 100rpx 0rpx;
+
+}
+
+
+.icon {
+  width: 120rpx;
+  height: 120rpx;
+  background: none;
+}
+
+.iconbutton {
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  margin-bottom: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  padding: 0;
+  background: none;
+}
